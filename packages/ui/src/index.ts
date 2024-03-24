@@ -1,5 +1,4 @@
 export * from './Dialog';
-export * from './utils';
 export * from './Button';
 export * from './Select';
 export * from './Menu';

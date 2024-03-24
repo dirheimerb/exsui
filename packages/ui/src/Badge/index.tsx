@@ -1,4 +1,4 @@
-import { clsxMerge, colorVariant } from '../utils';
+import { clsxMerge, colorVariant } from '@exsui/utils';
 
 export interface Badge {
     label: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { clsxMerge } from '../utils';
+import { clsxMerge } from '@exsui/utils';
 import { DialogContext } from './DialogContext';
 import { DialogContent } from './Content';
 import { DialogTitle } from './Title';

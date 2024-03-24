@@ -12,38 +12,33 @@ export { default as FABList } from './src/FAB/FABList';
 export { default as FABItem } from './src/FAB/FABItem';
 export { default as EditableTextField } from './src/InputFields/EditableTextField';
 export { default as EmailValidation } from './src/InputFields/Email';
-export { default as InputFields } from './src/InputFields/InputField';
+export { default as InputField } from './src/InputFields/InputField';
 export { default as Keywords } from './src/InputFields/Keywords';
-export {default as Navbar} from './src/Navbar';
-export {default as Sidebar} from './src/Navbar/Sidebar';
-export {default as SidebarSlider} from './src/Navbar/SidebarSlider';
+export { default as Navbar } from './src/Navbar';
+export { default as Sidebar } from './src/Navbar/Sidebar';
+export { default as SidebarSlider } from './src/Navbar/SidebarSlider';
 // Hooks
 export { useFAB } from './src/FAB/use-fab';
+export { useRipple } from './src/Hooks/use-ripple';
+export { useSuspenseImage } from './src/Hooks/use-suspense-image';
 // Types
-export type { 
-    FABContextProps, 
-    FABContextType, 
-    FABItemProps, 
-    FABProps, 
-    FABProviderProps 
-} from './src/FAB/types';
-export type {
-    InputFieldProps,
-    EditableTextFieldProps,
-    EmailValidationProps
-} from './src/InputFields/types';
-export type {
-    SidebarProps,
-} from './src/Navbar/SidebarSlider';
+export type { FABContextProps, FABContextType, FABItemProps, FABProps, FABProviderProps } from './src/FAB/types';
+export type { InputFieldProps, EditableTextFieldProps, EmailValidationProps } from './src/InputFields/types';
+export type { SidebarProps } from './src/Navbar/SidebarSlider';
 
 // export type {SidebarProps} from './src/Navbar/Sidebar';
-export type {NotifcationProps} from './src/Notification';
+export type { NotifcationProps } from './src/Notification';
 export * from './src/Navbar/Sidebar';
 export * from './src/Navbar';
 export * from './src/Views';
-export * from './src/utils';
 export * from './src/Button';
 export * from './src/Dialog';
 export * from './src/Badge';
 export * from './src/Notification';
-export * from './src/InputFields';
+
+export * from './src/Accordion';
+export * from './src/Table';
+export * from './src/styles';
+export * from './src/AutoComplete';
+export * from './src/Layout';
+export * from './src/Snackbar';

@@ -1,44 +1,61 @@
-import { clsxMerge } from '../utils/clsx-merge';
-import React, { forwardRef } from 'react';
+import {HTMLAttributes} from 'react'
+import { ColorKeys } from '../styles/types';
+import { forwardRef } from 'react';
+import { clsxMerge } from '@exsui/utils';
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary';
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+    variant?: 'filled' | 'outlined' | 'text';
     size?: 'sm' | 'md' | 'lg';
+    color?: ColorKeys;
+    fullWidth?: boolean;
+    loading?: boolean;
     disabled?: boolean;
-    ariaLabel?: string;
-    children?: React.ReactNode;
+    rounded?: boolean;
+    pill?: boolean;
 }
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-    (
-        {
-            variant = 'primary',
-            size = 'md',
-            children,
-            disabled,
 
-            ariaLabel,
-            ...props
-        }: ButtonProps,
-        ref,
-    ): JSX.Element => {
-        return (
-            <button
-                ref={ref}
-                className={clsxMerge(
-                    `inline-flex items-center gap-x-1.5 rounded-md px-3 py-2 font-semibold text-white shadow-sm  ${
-                        variant === 'primary' ? 'bg-gray-900 text-white' : 'bg-gray-300 text-gray-900'
-                    } ${size === 'sm' ? 'text-sm' : size === 'md' ? 'text-base' : 'text-lg'}`,
-                )}
-                disabled={disabled ? undefined : disabled}
-                aria-disabled={disabled ? 'true' : undefined}
-                aria-label={ariaLabel}
-                aria-pressed={disabled ? 'false' : undefined}
-                onClick={disabled ? undefined : props.onClick}
-                {...props}>
-                {children}
-            </button>
-        );
-    },
-);
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
+    variant = 'filled',
+    size = 'md',
+    color = 'gray',
+    fullWidth = false,
+    loading = false,
+    disabled = false,
+    className,
+    children,
+    rounded,
+    pill,
+    ...rest
+}, ref) => {
+    
+    return (
+        <button
+            ref={ref}
+            className={clsxMerge(
+                `
+                flex m-1
+                ${variant === 'filled' ? 'bg-' + color + '-500 text-white' : ''}
+                ${variant === 'outlined' ? 'border border-' + color + '-500 text-' + color + '-500' : ''}
+                ${variant === 'text' ? 'text-' + color + '-500' : ''}
+                ${size === 'sm' ? 'px-4 py-2 text-sm' : ''}
+                ${size === 'md' ? 'px-6 py-3 text-base' : ''}
+                ${size === 'lg' ? 'px-8 py-4 text-lg' : ''}
+                ${fullWidth ? 'w-full' : ''}
+                ${className?.length ? className : ''}
+                ${rounded ? 'rounded-md' : ''}
+                ${pill ? 'rounded-full' : ''}
+            `)}
+            disabled={disabled || loading}
+            {...rest}
+        >
+            {loading && <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+                <circle fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" cx="12" cy="12" r="10" stroke="currentColor"></circle>                
+                </svg>}
+            {children}
+        </button>
+    )
+})
+
 Button.displayName = 'Button';
+
 export default Button;

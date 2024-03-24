@@ -2,8 +2,7 @@ import { motion, AnimatePresence, color } from 'framer-motion';
 import React from 'react';
 import { MdHome, MdOutlinePersonOutline, MdOutlineFolder, MdOutlineCalendarToday } from 'react-icons/md';
 import { IoDuplicateOutline, IoPieChart } from 'react-icons/io5';
-import { clsxMerge } from '../utils/clsx-merge';
-import { colorVariant } from '../utils';
+import { clsxMerge, colorVariant } from '@exsui/utils';
 export interface SidebarProps {
     open: boolean;
 }

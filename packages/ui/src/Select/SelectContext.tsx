@@ -13,7 +13,7 @@ import {
 } from '@floating-ui/react';
 import React from 'react';
 import { SelectContextValue, SelectProviderProps } from './types';
-import { clsxMerge } from '../utils';
+import { clsxMerge } from '@exsui/utils';
 
 export const SelectContext = React.createContext<SelectContextValue>({} as SelectContextValue);
 

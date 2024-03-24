@@ -41,13 +41,13 @@ pnpm create material-tailwind my-material-tailwind-app --template next
 
 Currently supported template presets include:
 
-- `cra`
-- `cra-ts`
-- `next`
-- `next-ts`
-- `remix`
-- `remix-ts`
-- `vite`
-- `vite-ts`
+-   `cra`
+-   `cra-ts`
+-   `next`
+-   `next-ts`
+-   `remix`
+-   `remix-ts`
+-   `vite`
+-   `vite-ts`
 
 You can use `.` for the project name to scaffold in the current directory.

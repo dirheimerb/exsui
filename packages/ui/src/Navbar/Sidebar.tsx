@@ -3,7 +3,7 @@ import { IoDuplicateOutline, IoPieChart } from 'react-icons/io5';
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import './styles.css';
-import { clsxMerge } from '../utils';
+import { clsxMerge } from '@exsui/utils';
 
 const navigation = [
     { name: 'Dashboard', href: '#', icon: MdHome, count: '5', current: true },

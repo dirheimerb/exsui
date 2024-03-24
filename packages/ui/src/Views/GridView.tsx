@@ -1,4 +1,4 @@
-import { clsxMerge } from '../utils/clsx-merge';
+import { clsxMerge } from '@exsui/utils';
 import { GridViewProps } from './types';
 
 export default function GridView({ items, columns = 3 }: GridViewProps) {

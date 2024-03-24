@@ -5,7 +5,7 @@ import React, { forwardRef } from 'react';
 import { MenuContext } from './MenuContext';
 
 import './styles.css';
-import { clsxMerge } from '../utils/clsx-merge';
+import { clsxMerge } from '@exsui/utils';
 
 const MenuItem = forwardRef<HTMLButtonElement, GroupMenuItemProps & React.ButtonHTMLAttributes<HTMLButtonElement>>(
     (
