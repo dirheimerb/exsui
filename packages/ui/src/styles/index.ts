@@ -1,9 +1,9 @@
-export {useStyle} from './use-styles';
-export {useColor} from './use-colors';
-export {styleAPI} from './style-api';
-export {textColors, backgroundColors, colors} from './colors';
-export {ColorContext, ColorProvider} from './ColorContext';
-export {ThemeContext, StyleProvider} from './context';
+export { useStyle } from './use-styles';
+export { useColor } from './use-colors';
+export { styleAPI } from './style-api';
+export { textColors, backgroundColors, colors } from './colors';
+export { ColorContext, ColorProvider } from './ColorContext';
+export { ThemeContext, StyleProvider } from './context';
 
 export type {
     WidthOption,
@@ -22,5 +22,5 @@ export type {
     ColorType,
     ColorContextAPI,
     ColorProviderProps,
-    StyleProviderProps
-} from './types'
+    StyleProviderProps,
+} from './types';

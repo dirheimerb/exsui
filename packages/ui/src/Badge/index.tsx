@@ -1,12 +1,28 @@
 import { clsxMerge, colorVariant } from '@exsui/utils';
 
 export interface Badge {
+    /**
+     * label
+     * @type {string}
+     */
     label: string;
+    /**
+     * textColor
+     * @type {string}
+     */
     textColor?: string;
+    /**
+     * backgroundColor
+     * @type {string}
+     */
     backgroundColor?: string;
 }
-
-export default function Badge({ label, textColor = 'green', backgroundColor = 'green' }: Badge) {
+/**
+ *
+ * @param {Badge} { label, textColor = 'green', backgroundColor = 'green' }
+ * @returns {JSX.Element}
+ */
+export default function Badge({ label, textColor = 'green', backgroundColor = 'green' }: Badge): JSX.Element {
     const bg = colorVariant({ aspect: 'bg', colorName: backgroundColor, colorStrength: 100 });
     const text = colorVariant({ aspect: 'text', colorName: textColor, colorStrength: 700 });
 

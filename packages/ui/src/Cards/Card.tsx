@@ -1,22 +1,42 @@
 import React from 'react';
 
 export interface CardProps {
+    /**
+     * children
+     * @type {React.ReactNode}
+     */
     children: React.ReactNode;
 }
-
-export default function Card({ children }: CardProps) {
+/**
+ * Card
+ * @param {CardProps} { children }
+ * @returns {JSX.Element}
+ */
+export default function Card({ children }: CardProps): JSX.Element {
     return <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow">{children}</div>;
 }
-
-export function Header({ children }: CardProps) {
+/**
+ * Header
+ * @param {CardProps} { children }
+ * @returns {JSX.Element}
+ */
+export function Header({ children }: CardProps): JSX.Element {
     return <div className="px-4 py-5 sm:px-6">{children}</div>;
 }
-
-export function Content({ children }: CardProps) {
+/**
+ * Content
+ * @param {CardProps} { children }
+ * @returns {JSX.Element}
+ */
+export function Content({ children }: CardProps): JSX.Element {
     return <div className="px-4 py-5 sm:p-6">{children}</div>;
 }
-
-export function Footer({ children }: CardProps) {
+/**
+ * Footer
+ * @param {CardProps} { children }
+ * @returns {JSX.Element}
+ */
+export function Footer({ children }: CardProps): JSX.Element {
     return <div className="px-4 py-4 sm:px-6">{children}</div>;
 }
 

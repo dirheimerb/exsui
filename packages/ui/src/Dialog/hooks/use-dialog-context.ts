@@ -1,6 +1,9 @@
 import React from 'react';
 import { DialogContextObj } from '../types';
 
+/**
+ * useDialogContext
+ */
 export const useDialogContext = () => {
     const context = React.useContext(DialogContextObj);
 

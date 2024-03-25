@@ -4,8 +4,13 @@ import React from 'react';
 import type { DialogTriggerProps } from './types';
 import { useDialogContext } from './hooks/use-dialog-context';
 
+/**
+ * DialogTrigger
+ * @param {React.HTMLProps<HTMLElement> & DialogTriggerProps} { children, asChild = false, ...props }
+ * @returns {JSX.Element}
+ */
 export const DialogTrigger = React.forwardRef<HTMLElement, React.HTMLProps<HTMLElement> & DialogTriggerProps>(
-    function DialogTrigger({ children, asChild = false, ...props }, propRef) {
+    function DialogTrigger({ children, asChild = false, ...props }, propRef): JSX.Element {
         const context = useDialogContext();
         const childrenRef = (children as any).ref;
         const ref = useMergeRefs([context.refs.setReference, propRef, childrenRef]);

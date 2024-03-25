@@ -1,6 +1,6 @@
-import React from "react";
-import { ColorContext } from "./ColorContext";
-import { ColorContextAPI } from "./types";
+import React from 'react';
+import { ColorContext } from './ColorContext';
+import { ColorContextAPI } from './types';
 
 /**
  * A hook to access the color API
@@ -11,5 +11,5 @@ export const useColor = (): { colors: ColorContextAPI } => {
     if (!colors) {
         throw new Error('useColor must be used within a ColorProvider');
     }
-    return {colors};
-}
+    return { colors };
+};

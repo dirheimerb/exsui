@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { AccordionProps } from "./styles";
+import { AccordionProps } from './styles';
 import { AccordionContextProvider } from './Context';
 import { AccordionItemProps } from './types';
 
@@ -26,22 +26,26 @@ export interface AccordionProps extends React.ComponentProps<'div'> {
 
 export interface AccordionProps {
     items: AccordionItemProps[];
-  }
-  
-export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
-    ({  items }) => {
-        return (
-            <AccordionContextProvider>
-                  <LayoutGroup>
-                 {items.map((item, index) => (
-                    <AccordionItem  key={index} title={item.title} content={item.content} />
+}
+/**
+ * Accordion
+ * @param {AccordionProps} props
+ * @returns {JSX.Element}
+ */
+export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(({ items }): JSX.Element => {
+    return (
+        <AccordionContextProvider>
+            <LayoutGroup>
+                {items.map((item, index) => (
+                    <AccordionItem
+                        key={index}
+                        title={item.title}
+                        content={item.content}
+                    />
                 ))}
-                </LayoutGroup>
-            </AccordionContextProvider>
-        );
-    },
-);
+            </LayoutGroup>
+        </AccordionContextProvider>
+    );
+});
 
 Accordion.displayName = 'Accordion';
-
-

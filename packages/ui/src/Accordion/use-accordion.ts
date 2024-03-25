@@ -1,6 +1,6 @@
-import { AccordionContext } from "./Context";
-import { AccordionContextType } from "./types";
-import React from "react";
+import { AccordionContext } from './Context';
+import { AccordionContextType } from './types';
+import React from 'react';
 
 /**
  * A hook to use the Accordion context.

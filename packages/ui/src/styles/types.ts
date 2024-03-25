@@ -69,64 +69,76 @@ export type ColorShades = {
     800: string;
     900: string;
     950: string;
-
-}
+};
 export interface TextColor {
-white: string;
-black: string;
-gray: ColorShades
-red: ColorShades
-yellow: ColorShades
-green: ColorShades
-blue: ColorShades
-indigo: ColorShades
-purple: ColorShades
-pink: ColorShades
-fuscia: ColorShades
-slate: ColorShades
-zinc: ColorShades
-neutral: ColorShades
-stone: ColorShades
-orange: ColorShades
-amber: ColorShades
-lime: ColorShades
-emerald: ColorShades
-teal: ColorShades
-cyan: ColorShades
-sky: ColorShades
+    white: string;
+    black: string;
+    gray: ColorShades;
+    red: ColorShades;
+    yellow: ColorShades;
+    green: ColorShades;
+    blue: ColorShades;
+    indigo: ColorShades;
+    purple: ColorShades;
+    pink: ColorShades;
+    fuscia: ColorShades;
+    slate: ColorShades;
+    zinc: ColorShades;
+    neutral: ColorShades;
+    stone: ColorShades;
+    orange: ColorShades;
+    amber: ColorShades;
+    lime: ColorShades;
+    emerald: ColorShades;
+    teal: ColorShades;
+    cyan: ColorShades;
+    sky: ColorShades;
 }
 
 export type ColorKeys = keyof TextColor | keyof BackgroundColor;
 
 export interface BackgroundColor {
-white: string;
-black: string;
-gray: ColorShades
-red: ColorShades
-yellow: ColorShades
-green: ColorShades
-blue: ColorShades
-indigo: ColorShades
-purple: ColorShades
-pink: ColorShades
-fuscia: ColorShades
-slate: ColorShades
-zinc: ColorShades
-neutral: ColorShades
-stone: ColorShades
-orange: ColorShades
-amber: ColorShades
-lime: ColorShades
-emerald: ColorShades
-teal: ColorShades
-cyan: ColorShades
-sky: ColorShades
+    white: string;
+    black: string;
+    gray: ColorShades;
+    red: ColorShades;
+    yellow: ColorShades;
+    green: ColorShades;
+    blue: ColorShades;
+    indigo: ColorShades;
+    purple: ColorShades;
+    pink: ColorShades;
+    fuscia: ColorShades;
+    slate: ColorShades;
+    zinc: ColorShades;
+    neutral: ColorShades;
+    stone: ColorShades;
+    orange: ColorShades;
+    amber: ColorShades;
+    lime: ColorShades;
+    emerald: ColorShades;
+    teal: ColorShades;
+    cyan: ColorShades;
+    sky: ColorShades;
 }
 
 export type TextDecoration = 'underline' | 'overline' | 'lineThrough';
 export type WidthOption = 'quarter' | 'half' | 'threeQuarters' | 'full';
 export type RoundnessOption = 'none' | 'sm' | 'md' | 'lg' | 'full';
-export type TextSizeOption = 'xs' | 'sm' | 'base' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl' | '9xl';
+export type TextSizeOption =
+    | 'xs'
+    | 'sm'
+    | 'base'
+    | 'lg'
+    | 'xl'
+    | '2xl'
+    | '3xl'
+    | '4xl'
+    | '5xl'
+    | '6xl'
+    | '7xl'
+    | '8xl'
+    | '9xl';
 export type ColorType = 'text' | 'background';
 
 export interface ColorContextAPI {

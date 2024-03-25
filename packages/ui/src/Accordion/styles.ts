@@ -1,4 +1,4 @@
-import { AccordionStylesType } from "./types";
+import { AccordionStylesType } from './types';
 
 export const AccordionProps: AccordionStylesType = {
     defaultProps: {
@@ -58,4 +58,4 @@ export const AccordionProps: AccordionStylesType = {
             },
         },
     },
-}
+};

@@ -1,11 +1,24 @@
-import { ReactNode, CSSProperties } from "react";
+import { ReactNode, CSSProperties } from 'react';
 
 export interface AccordionContextType {
+    /**
+     * openIndex
+     * @type {number | null}
+     */
     openIndex: number | null;
+    /**
+     * setOpenIndex
+     * @param {number | null} index
+     * @returns {void}
+     */
     setOpenIndex: (index: number | null) => void;
 }
 
 export interface AccordionContextProviderProps {
+    /**
+     * children
+     * @type {ReactNode}
+     */
     children: ReactNode;
 }
 
@@ -84,4 +97,4 @@ export interface AccordionItemProps {
     content: React.ReactNode;
     className?: string;
     contentClassName?: string;
-} 
+}

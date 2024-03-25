@@ -16,6 +16,7 @@
     "build": "tsup",
     "build:css": "tailwindcss -i ./styles.css -o ./dist/index.css",
     "dev": "tsup --watch",
+    "docs": "typedoc --out docs ./src/index.ts",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
@@ -50,6 +51,10 @@
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "4.0.0-next.54",
+    "typedoc-plugin-mdn-links": "^3.1.18",
+    "typedoc-plugin-missing-exports": "^2.2.0",
     "typescript": "^5.4.3"
   }
 }

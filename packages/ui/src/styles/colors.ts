@@ -1,5 +1,4 @@
-import { BackgroundColor, TextColor } from "./types"
-
+import { BackgroundColor, TextColor } from './types';
 
 export const textColors: TextColor = {
     white: 'text-white',
@@ -15,7 +14,7 @@ export const textColors: TextColor = {
         700: 'text-gray-700',
         800: 'text-gray-800',
         900: 'text-gray-900',
-        950: 'text-gray-950'
+        950: 'text-gray-950',
     },
     red: {
         50: 'text-red-50',
@@ -28,7 +27,7 @@ export const textColors: TextColor = {
         700: 'text-red-700',
         800: 'text-red-800',
         900: 'text-red-900',
-        950: 'text-red-950'
+        950: 'text-red-950',
     },
     yellow: {
         50: 'text-yellow-50',
@@ -41,7 +40,7 @@ export const textColors: TextColor = {
         700: 'text-yellow-700',
         800: 'text-yellow-800',
         900: 'text-yellow-900',
-        950: 'text-yellow-950'
+        950: 'text-yellow-950',
     },
     green: {
         50: 'text-green-50',
@@ -54,7 +53,7 @@ export const textColors: TextColor = {
         700: 'text-green-700',
         800: 'text-green-800',
         900: 'text-green-900',
-        950: 'text-green-950'
+        950: 'text-green-950',
     },
     blue: {
         50: 'text-blue-50',
@@ -67,7 +66,7 @@ export const textColors: TextColor = {
         700: 'text-blue-700',
         800: 'text-blue-800',
         900: 'text-blue-900',
-        950: 'text-blue-950'
+        950: 'text-blue-950',
     },
     indigo: {
         50: 'text-indigo-50',
@@ -80,7 +79,7 @@ export const textColors: TextColor = {
         700: 'text-indigo-700',
         800: 'text-indigo-800',
         900: 'text-indigo-900',
-        950: 'text-indigo-950'
+        950: 'text-indigo-950',
     },
     purple: {
         50: 'text-purple-50',
@@ -93,7 +92,7 @@ export const textColors: TextColor = {
         700: 'text-purple-700',
         800: 'text-purple-800',
         900: 'text-purple-900',
-        950: 'text-purple-950'
+        950: 'text-purple-950',
     },
     pink: {
         50: 'text-pink-50',
@@ -106,7 +105,7 @@ export const textColors: TextColor = {
         700: 'text-pink-700',
         800: 'text-pink-800',
         900: 'text-pink-900',
-        950: 'text-pink-950'
+        950: 'text-pink-950',
     },
     fuscia: {
         50: 'text-fuscia-50',
@@ -119,7 +118,7 @@ export const textColors: TextColor = {
         700: 'text-fuscia-700',
         800: 'text-fuscia-800',
         900: 'text-fuscia-900',
-        950: 'text-fuscia-950'
+        950: 'text-fuscia-950',
     },
     slate: {
         50: 'text-slate-50',
@@ -132,7 +131,7 @@ export const textColors: TextColor = {
         700: 'text-slate-700',
         800: 'text-slate-800',
         900: 'text-slate-900',
-        950: 'text-slate-950'
+        950: 'text-slate-950',
     },
     zinc: {
         50: 'text-zinc-50',
@@ -145,7 +144,7 @@ export const textColors: TextColor = {
         700: 'text-zinc-700',
         800: 'text-zinc-800',
         900: 'text-zinc-900',
-        950: 'text-zinc-950'
+        950: 'text-zinc-950',
     },
     neutral: {
         50: 'text-neutral-50',
@@ -158,7 +157,7 @@ export const textColors: TextColor = {
         700: 'text-neutral-700',
         800: 'text-neutral-800',
         900: 'text-neutral-900',
-        950: 'text-neutral-950'
+        950: 'text-neutral-950',
     },
     stone: {
         50: 'text-stone-50',
@@ -171,7 +170,7 @@ export const textColors: TextColor = {
         700: 'text-stone-700',
         800: 'text-stone-800',
         900: 'text-stone-900',
-        950: 'text-stone-950'
+        950: 'text-stone-950',
     },
     orange: {
         50: 'text-orange-50',
@@ -184,7 +183,7 @@ export const textColors: TextColor = {
         700: 'text-orange-700',
         800: 'text-orange-800',
         900: 'text-orange-900',
-        950: 'text-orange-950'
+        950: 'text-orange-950',
     },
     amber: {
         50: 'text-amber-50',
@@ -197,7 +196,7 @@ export const textColors: TextColor = {
         700: 'text-amber-700',
         800: 'text-amber-800',
         900: 'text-amber-900',
-        950: 'text-amber-950'
+        950: 'text-amber-950',
     },
     lime: {
         50: 'text-lime-50',
@@ -210,7 +209,7 @@ export const textColors: TextColor = {
         700: 'text-lime-700',
         800: 'text-lime-800',
         900: 'text-lime-900',
-        950: 'text-lime-950'
+        950: 'text-lime-950',
     },
     emerald: {
         50: 'text-emerald-50',
@@ -223,7 +222,7 @@ export const textColors: TextColor = {
         700: 'text-emerald-700',
         800: 'text-emerald-800',
         900: 'text-emerald-900',
-        950: 'text-emerald-950'
+        950: 'text-emerald-950',
     },
     teal: {
         50: 'text-teal-50',
@@ -236,7 +235,7 @@ export const textColors: TextColor = {
         700: 'text-teal-700',
         800: 'text-teal-800',
         900: 'text-teal-900',
-        950: 'text-teal-950'
+        950: 'text-teal-950',
     },
     cyan: {
         50: 'text-cyan-50',
@@ -249,7 +248,7 @@ export const textColors: TextColor = {
         700: 'text-cyan-700',
         800: 'text-cyan-800',
         900: 'text-cyan-900',
-        950: 'text-cyan-950'
+        950: 'text-cyan-950',
     },
     sky: {
         50: 'text-sky-50',
@@ -262,9 +261,9 @@ export const textColors: TextColor = {
         700: 'text-sky-700',
         800: 'text-sky-800',
         900: 'text-sky-900',
-        950: 'text-sky-950'
+        950: 'text-sky-950',
     },
-}
+};
 
 export const backgroundColors: BackgroundColor = {
     white: 'bg-white hover:bg-gray-50 focus:bg-gray-50 active:bg-gray-100',
@@ -280,10 +279,10 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-gray-700 hover:bg-gray-800 focus:bg-gray-800 active:bg-gray-900',
         800: 'bg-gray-800 hover:bg-gray-900 focus:bg-gray-900 active:bg-gray-950',
         900: 'bg-gray-900 hover:bg-gray-950 focus:bg-gray-950 active:bg-gray-950',
-        950: 'bg-gray-950 hover:bg-gray-950 focus:bg-gray-950 active:bg-gray-950'
+        950: 'bg-gray-950 hover:bg-gray-950 focus:bg-gray-950 active:bg-gray-950',
     },
     red: {
-        50:  'bg-red-50 hover:bg-red-100 focus:bg-red-100 active:bg-red-200',
+        50: 'bg-red-50 hover:bg-red-100 focus:bg-red-100 active:bg-red-200',
         100: 'bg-red-100 hover:bg-red-200 focus:bg-red-200 active:bg-red-300',
         200: 'bg-red-200 hover:bg-red-300 focus:bg-red-300 active:bg-red-400',
         300: 'bg-red-300 hover:bg-red-400 focus:bg-red-400 active:bg-red-500',
@@ -293,10 +292,10 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-red-700 hover:bg-red-800 focus:bg-red-800 active:bg-red-900',
         800: 'bg-red-800 hover:bg-red-900 focus:bg-red-900 active:bg-red-950',
         900: 'bg-red-900 hover:bg-red-800 focus:bg-red-800 active:bg-red-800',
-        950: 'bg-red-950 hover:bg-red-950 focus:bg-red-950 active:bg-red-950'
+        950: 'bg-red-950 hover:bg-red-950 focus:bg-red-950 active:bg-red-950',
     },
     yellow: {
-        50:  'bg-yellow-50 hover:bg-yellow-100 focus:bg-yellow-100 active:bg-yellow-200',
+        50: 'bg-yellow-50 hover:bg-yellow-100 focus:bg-yellow-100 active:bg-yellow-200',
         100: 'bg-yellow-100 hover:bg-yellow-200 focus:bg-yellow-200 active:bg-yellow-300',
         200: 'bg-yellow-200 hover:bg-yellow-300 focus:bg-yellow-300 active:bg-yellow-400',
         300: 'bg-yellow-300 hover:bg-yellow-400 focus:bg-yellow-400 active:bg-yellow-500',
@@ -306,7 +305,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-yellow-700 hover:bg-yellow-800 focus:bg-yellow-800 active:bg-yellow-900',
         800: 'bg-yellow-800 hover:bg-yellow-900 focus:bg-yellow-900 active:bg-yellow-950',
         900: 'bg-yellow-900 hover:bg-yellow-950 focus:bg-yellow-950 active:bg-yellow-950',
-        950: 'bg-yellow-950 hover:bg-yellow-950 focus:bg-yellow-950 active:bg-yellow-950'
+        950: 'bg-yellow-950 hover:bg-yellow-950 focus:bg-yellow-950 active:bg-yellow-950',
     },
     green: {
         50: 'bg-green-50 hover:bg-green-100 focus:bg-green-100 active:bg-green-200',
@@ -319,7 +318,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-green-700 hover:bg-green-800 focus:bg-green-800 active:bg-green-900',
         800: 'bg-green-800 hover:bg-green-900 focus:bg-green-900 active:bg-green-950',
         900: 'bg-green-900 hover:bg-green-950 focus:bg-green-950 active:bg-green-950',
-        950: 'bg-green-950 hover:bg-green-950 focus:bg-green-950 active:bg-green-950'
+        950: 'bg-green-950 hover:bg-green-950 focus:bg-green-950 active:bg-green-950',
     },
     blue: {
         50: 'bg-blue-50 hover:bg-blue-100 focus:bg-blue-100 active:bg-blue-200',
@@ -332,7 +331,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-blue-700 hover:bg-blue-800 focus:bg-blue-800 active:bg-blue-900',
         800: 'bg-blue-800 hover:bg-blue-900 focus:bg-blue-900 active:bg-blue-950',
         900: 'bg-blue-900 hover:bg-blue-950 focus:bg-blue-950 active:bg-blue-950',
-        950: 'bg-blue-950 hover:bg-blue-950 focus:bg-blue-950 active:bg-blue-950'
+        950: 'bg-blue-950 hover:bg-blue-950 focus:bg-blue-950 active:bg-blue-950',
     },
     indigo: {
         50: 'bg-indigo-50 hover:bg-indigo-100 focus:bg-indigo-100 active:bg-indigo-200',
@@ -345,7 +344,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-indigo-700 hover:bg-indigo-800 focus:bg-indigo-800 active:bg-indigo-900',
         800: 'bg-indigo-800 hover:bg-indigo-900 focus:bg-indigo-900 active:bg-indigo-950',
         900: 'bg-indigo-900 hover:bg-indigo-950 focus:bg-indigo-950 active:bg-indigo-950',
-        950: 'bg-indigo-950 hover:bg-indigo-950 focus:bg-indigo-950 active:bg-indigo-950'
+        950: 'bg-indigo-950 hover:bg-indigo-950 focus:bg-indigo-950 active:bg-indigo-950',
     },
     purple: {
         50: 'bg-purple-50 hover:bg-purple-100 focus:bg-purple-100 active:bg-purple-200',
@@ -358,7 +357,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-purple-700 hover:bg-purple-800 focus:bg-purple-800 active:bg-purple-900',
         800: 'bg-purple-800 hover:bg-purple-900 focus:bg-purple-900 active:bg-purple-950',
         900: 'bg-purple-900 hover:bg-purple-950 focus:bg-purple-950 active:bg-purple-950',
-        950: 'bg-purple-950 hover:bg-purple-950 focus:bg-purple-950 active:bg-purple-950'
+        950: 'bg-purple-950 hover:bg-purple-950 focus:bg-purple-950 active:bg-purple-950',
     },
     pink: {
         50: 'bg-pink-50 hover:bg-pink-100 focus:bg-pink-100 active:bg-pink-200',
@@ -371,7 +370,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-pink-700 hover:bg-pink-800 focus:bg-pink-800 active:bg-pink-900',
         800: 'bg-pink-800 hover:bg-pink-900 focus:bg-pink-900 active:bg-pink-950',
         900: 'bg-pink-900 hover:bg-pink-950 focus:bg-pink-950 active:bg-pink-950',
-        950: 'bg-pink-950 hover:bg-pink-950 focus:bg-pink-950 active:bg-pink-950'
+        950: 'bg-pink-950 hover:bg-pink-950 focus:bg-pink-950 active:bg-pink-950',
     },
     fuscia: {
         50: 'bg-fuscia-50 hover:bg-fuscia-100 focus:bg-fuscia-100 active:bg-fuscia-200',
@@ -384,7 +383,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-fuscia-700 hover:bg-fuscia-800 focus:bg-fuscia-800 active:bg-fuscia-900',
         800: 'bg-fuscia-800 hover:bg-fuscia-900 focus:bg-fuscia-900 active:bg-fuscia-950',
         900: 'bg-fuscia-900 hover:bg-fuscia-950 focus:bg-fuscia-950 active:bg-fuscia-950',
-        950: 'bg-fuscia-950 hover:bg-fuscia-950 focus:bg-fuscia-950 active:bg-fuscia-950'
+        950: 'bg-fuscia-950 hover:bg-fuscia-950 focus:bg-fuscia-950 active:bg-fuscia-950',
     },
     slate: {
         50: 'bg-slate-50 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-200',
@@ -397,7 +396,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-slate-700 hover:bg-slate-800 focus:bg-slate-800 active:bg-slate-900',
         800: 'bg-slate-800 hover:bg-slate-900 focus:bg-slate-900 active:bg-slate-950',
         900: 'bg-slate-900 hover:bg-slate-950 focus:bg-slate-950 active:bg-slate-950',
-        950: 'bg-slate-950 hover:bg-slate-950 focus:bg-slate-950 active:bg-slate-950'
+        950: 'bg-slate-950 hover:bg-slate-950 focus:bg-slate-950 active:bg-slate-950',
     },
     zinc: {
         50: 'bg-zinc-50 hover:bg-zinc-100 focus:bg-zinc-100 active:bg-zinc-200',
@@ -410,7 +409,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-zinc-700 hover:bg-zinc-800 focus:bg-zinc-800 active:bg-zinc-900',
         800: 'bg-zinc-800 hover:bg-zinc-900 focus:bg-zinc-900 active:bg-zinc-950',
         900: 'bg-zinc-900 hover:bg-zinc-950 focus:bg-zinc-950 active:bg-zinc-950',
-        950: 'bg-zinc-950 hover:bg-zinc-950 focus:bg-zinc-950 active:bg-zinc-950'
+        950: 'bg-zinc-950 hover:bg-zinc-950 focus:bg-zinc-950 active:bg-zinc-950',
     },
     neutral: {
         50: 'bg-neutral-50 hover:bg-neutral-100 focus:bg-neutral-100 active:bg-neutral-200',
@@ -423,7 +422,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-neutral-700 hover:bg-neutral-800 focus:bg-neutral-800 active:bg-neutral-900',
         800: 'bg-neutral-800 hover:bg-neutral-900 focus:bg-neutral-900 active:bg-neutral-950',
         900: 'bg-neutral-900 hover:bg-neutral-950 focus:bg-neutral-950 active:bg-neutral-950',
-        950: 'bg-neutral-950 hover:bg-neutral-950 focus:bg-neutral-950 active:bg-neutral-950'
+        950: 'bg-neutral-950 hover:bg-neutral-950 focus:bg-neutral-950 active:bg-neutral-950',
     },
     stone: {
         50: 'bg-stone-50 hover:bg-stone-100 focus:bg-stone-100 active:bg-stone-200',
@@ -436,7 +435,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-stone-700 hover:bg-stone-800 focus:bg-stone-800 active:bg-stone-900',
         800: 'bg-stone-800 hover:bg-stone-900 focus:bg-stone-900 active:bg-stone-950',
         900: 'bg-stone-900 hover:bg-stone-950 focus:bg-stone-950 active:bg-stone-950',
-        950: 'bg-stone-950 hover:bg-stone-950 focus:bg-stone-950 active:bg-stone-950'
+        950: 'bg-stone-950 hover:bg-stone-950 focus:bg-stone-950 active:bg-stone-950',
     },
     orange: {
         50: 'bg-orange-50 hover:bg-orange-100 focus:bg-orange-100 active:bg-orange-200',
@@ -449,7 +448,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-orange-700 hover:bg-orange-800 focus:bg-orange-800 active:bg-orange-900',
         800: 'bg-orange-800 hover:bg-orange-900 focus:bg-orange-900 active:bg-orange-950',
         900: 'bg-orange-900 hover:bg-orange-950 focus:bg-orange-950 active:bg-orange-950',
-        950: 'bg-orange-950 hover:bg-orange-950 focus:bg-orange-950 active:bg-orange-950'
+        950: 'bg-orange-950 hover:bg-orange-950 focus:bg-orange-950 active:bg-orange-950',
     },
     amber: {
         50: 'bg-amber-50 hover:bg-amber-100 focus:bg-amber-100 active:bg-amber-200',
@@ -462,7 +461,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-amber-700 hover:bg-amber-800 focus:bg-amber-800 active:bg-amber-900',
         800: 'bg-amber-800 hover:bg-amber-900 focus:bg-amber-900 active:bg-amber-950',
         900: 'bg-amber-900 hover:bg-amber-950 focus:bg-amber-950 active:bg-amber-950',
-        950: 'bg-amber-950 hover:bg-amber-950 focus:bg-amber-950 active:bg-amber-950'
+        950: 'bg-amber-950 hover:bg-amber-950 focus:bg-amber-950 active:bg-amber-950',
     },
     lime: {
         50: 'bg-lime-50 hover:bg-lime-100 focus:bg-lime-100 active:bg-lime-200',
@@ -475,7 +474,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-lime-700 hover:bg-lime-800 focus:bg-lime-800 active:bg-lime-900',
         800: 'bg-lime-800 hover:bg-lime-900 focus:bg-lime-900 active:bg-lime-950',
         900: 'bg-lime-900 hover:bg-lime-950 focus:bg-lime-950 active:bg-lime-950',
-        950: 'bg-lime-950 hover:bg-lime-950 focus:bg-lime-950 active:bg-lime-950'
+        950: 'bg-lime-950 hover:bg-lime-950 focus:bg-lime-950 active:bg-lime-950',
     },
     emerald: {
         50: 'bg-emerald-50 hover:bg-emerald-100 focus:bg-emerald-100 active:bg-emerald-200',
@@ -488,7 +487,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-emerald-700 hover:bg-emerald-800 focus:bg-emerald-800 active:bg-emerald-900',
         800: 'bg-emerald-800 hover:bg-emerald-900 focus:bg-emerald-900 active:bg-emerald-950',
         900: 'bg-emerald-900 hover:bg-emerald-950 focus:bg-emerald-950 active:bg-emerald-950',
-        950: 'bg-emerald-950 hover:bg-emerald-950 focus:bg-emerald-950 active:bg-emerald-950'
+        950: 'bg-emerald-950 hover:bg-emerald-950 focus:bg-emerald-950 active:bg-emerald-950',
     },
     teal: {
         50: 'bg-teal-50 hover:bg-teal-100 focus:bg-teal-100 active:bg-teal-200',
@@ -501,7 +500,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-teal-700 hover:bg-teal-800 focus:bg-teal-800 active:bg-teal-900',
         800: 'bg-teal-800 hover:bg-teal-900 focus:bg-teal-900 active:bg-teal-950',
         900: 'bg-teal-900 hover:bg-teal-950 focus:bg-teal-950 active:bg-teal-950',
-        950: 'bg-teal-950 hover:bg-teal-950 focus:bg-teal-950 active:bg-teal-950'
+        950: 'bg-teal-950 hover:bg-teal-950 focus:bg-teal-950 active:bg-teal-950',
     },
     cyan: {
         50: 'bg-cyan-50 hover:bg-cyan-100 focus:bg-cyan-100 active:bg-cyan-200',
@@ -514,7 +513,7 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-cyan-700 hover:bg-cyan-800 focus:bg-cyan-800 active:bg-cyan-900',
         800: 'bg-cyan-800 hover:bg-cyan-900 focus:bg-cyan-900 active:bg-cyan-950',
         900: 'bg-cyan-900 hover:bg-cyan-950 focus:bg-cyan-950 active:bg-cyan-950',
-        950: 'bg-cyan-950 hover:bg-cyan-950 focus:bg-cyan-950 active:bg-cyan-950'
+        950: 'bg-cyan-950 hover:bg-cyan-950 focus:bg-cyan-950 active:bg-cyan-950',
     },
     sky: {
         50: 'bg-sky-50 hover:bg-sky-100 focus:bg-sky-100 active:bg-sky-200',
@@ -527,11 +526,11 @@ export const backgroundColors: BackgroundColor = {
         700: 'bg-sky-700 hover:bg-sky-800 focus:bg-sky-800 active:bg-sky-900',
         800: 'bg-sky-800 hover:bg-sky-900 focus:bg-sky-900 active:bg-sky-950',
         900: 'bg-sky-900 hover:bg-sky-950 focus:bg-sky-950 active:bg-sky-950',
-        950: 'bg-sky-950 hover:bg-sky-950 focus:bg-sky-950 active:bg-sky-950'
-    }
-}
+        950: 'bg-sky-950 hover:bg-sky-950 focus:bg-sky-950 active:bg-sky-950',
+    },
+};
 
 export const colors = {
     background: backgroundColors,
-    text: textColors
-}
+    text: textColors,
+};

@@ -1,19 +1,19 @@
-import { textColors, backgroundColors } from "./colors";
-import { StyleAPI } from "./types";
+import { textColors, backgroundColors } from './colors';
+import { StyleAPI } from './types';
 
 export const styleAPI: StyleAPI = {
     width: {
         quarter: 'w-1/4',
         half: 'w-1/2',
         threeQuarters: 'w-3/4',
-        full: 'w-full'
+        full: 'w-full',
     },
     round: {
         none: 'rounded-none',
         sm: 'rounded-sm',
         md: 'rounded-md',
         lg: 'rounded-lg',
-        full: 'rounded-full'
+        full: 'rounded-full',
     },
     textSize: {
         xs: 'text-xs',
@@ -28,7 +28,7 @@ export const styleAPI: StyleAPI = {
         '6xl': 'text-6xl',
         '7xl': 'text-7xl',
         '8xl': 'text-8xl',
-        '9xl': 'text-9xl'
+        '9xl': 'text-9xl',
     },
     color: {
         text: textColors,
@@ -42,12 +42,12 @@ export const styleAPI: StyleAPI = {
         '2xl': 'shadow-2xl',
         inner: 'shadow-inner',
         outline: 'shadow-outline',
-        none: 'shadow-none'
+        none: 'shadow-none',
     },
     disabled: 'text-gray-500',
     textDecoration: {
         underline: 'underline',
         overline: 'overline',
-        lineThrough: 'line-through'
+        lineThrough: 'line-through',
     },
 };

@@ -1,8 +1,8 @@
-import { useCallback } from "react";
-import { backgroundColors, colors, textColors } from "./colors";
-import { ColorContextAPI, ColorProviderProps } from "./types";
-import React from "react";
-import { useMemo } from "react";
+import { useCallback } from 'react';
+import { backgroundColors, colors, textColors } from './colors';
+import { ColorContextAPI, ColorProviderProps } from './types';
+import React from 'react';
+import { useMemo } from 'react';
 
 export const ColorContext = React.createContext<ColorContextAPI | undefined>(undefined);
 /**
@@ -14,7 +14,7 @@ export const ColorProvider = ({ children }: ColorProviderProps): JSX.Element => 
     const [color, setColor] = React.useState<ColorContextAPI | undefined>({
         textColors: colors.text,
         backgroundColors: colors.background,
-        setColors: () => { }
+        setColors: () => {},
     });
 
     const handleColorChange = useCallback((color: ColorContextAPI) => {
@@ -22,20 +22,17 @@ export const ColorProvider = ({ children }: ColorProviderProps): JSX.Element => 
     }, []);
 
     const colorValue = useMemo(() => {
-        if(!color) return {
-            textColors: textColors,
-            backgroundColors: backgroundColors,
-            setColors: handleColorChange
-        }
+        if (!color)
+            return {
+                textColors: textColors,
+                backgroundColors: backgroundColors,
+                setColors: handleColorChange,
+            };
         return {
             textColors: color?.textColors,
             backgroundColors: color?.backgroundColors,
-            setColors: handleColorChange
-        }
+            setColors: handleColorChange,
+        };
     }, [color, handleColorChange]);
-    return (
-        <ColorContext.Provider value={colorValue}>
-            {children}
-        </ColorContext.Provider>
-    );
-}
+    return <ColorContext.Provider value={colorValue}>{children}</ColorContext.Provider>;
+};

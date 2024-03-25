@@ -14,8 +14,11 @@ import {
 import { useState, useRef } from 'react';
 import Item from './Item';
 import { data } from './example';
-
-export default function AutoComplete() {
+/**
+ * AutoComplete
+ * @returns {JSX.Element}
+ */
+export default function AutoComplete(): JSX.Element {
     const [open, setOpen] = useState(false);
     const [inputValue, setInputValue] = useState('');
     const [activeIndex, setActiveIndex] = useState<number | null>(null);

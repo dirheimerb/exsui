@@ -1,9 +1,13 @@
 'use client';
 import React, { useId } from 'react';
 import { useDialogContext } from './hooks/use-dialog-context';
-
+/**
+ * DialogTitle
+ * @param {React.HTMLProps<HTMLHeadingElement>} { children, ...props }
+ * @returns {JSX.Element}
+ */
 export const DialogTitle = React.forwardRef<HTMLHeadingElement, React.HTMLProps<HTMLHeadingElement>>(
-    function DialogTitle({ children, ...props }, ref) {
+    function DialogTitle({ children, ...props }, ref): JSX.Element {
         const { setLabelId } = useDialogContext();
         const id = useId();
 
