@@ -44,6 +44,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
      * @type {boolean}
      */
     pill?: boolean;
+    type?: 'button' | 'submit' | 'reset';
 }
 /**
  * Button
@@ -63,6 +64,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             children,
             rounded,
             pill,
+            type = 'button',
             ...rest
         },
         ref,
@@ -70,6 +72,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         return (
             <button
                 ref={ref}
+                type={type}
                 className={clsxMerge(
                     `
                 m-1 flex
