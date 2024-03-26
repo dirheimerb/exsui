@@ -1,8 +1,8 @@
-import { Fragment, useRef } from 'react';
+import { useRef } from 'react';
 import { LuCheckCircle } from 'react-icons/lu';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Transition } from '@headlessui/react';
 import { MdErrorOutline, MdInfoOutline, MdOutlineWarningAmber } from 'react-icons/md';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export interface NotifcationProps {
     type?: 'success' | 'error' | 'warning' | 'info';
@@ -20,18 +20,15 @@ export default function Notifcation({ type = 'success', show, setShow, title, me
                 className="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6"
                 ref={divRef}>
                 {/* Notification panel, dynamically insert this into the live region when it needs to be displayed */}
-                <Transition
-                    show={show}
-                    as={Fragment}
-                    enter="transform ease-out duration-300 transition"
-                    enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
-                    enterTo="translate-y-0 opacity-100 sm:translate-x-0"
-                    leave="transition ease-in duration-100"
-                    leaveFrom="opacity-100"
-                    leaveTo="opacity-0">
-                    <div className="flex w-full flex-col items-center space-y-4 sm:items-end">
+                <AnimatePresence>
+                    <motion.div className="flex w-full flex-col items-center space-y-4 sm:items-end">
                         {show && (
-                            <div className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                            <motion.div
+                                className="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 50 }}
+                                transition={{ duration: 0.3 }}>
                                 <div className="p-4">
                                     <div className="flex items-start">
                                         <div className="flex-shrink-0">
@@ -80,10 +77,10 @@ export default function Notifcation({ type = 'success', show, setShow, title, me
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         )}
-                    </div>
-                </Transition>
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </>
     );

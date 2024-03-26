@@ -6,6 +6,28 @@ export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElem
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     error?: string;
+    type:
+        | 'text'
+        | 'password'
+        | 'email'
+        | 'number'
+        | 'tel'
+        | 'url'
+        | 'date'
+        | 'time'
+        | 'datetime-local'
+        | 'month'
+        | 'week'
+        | 'search'
+        | 'color'
+        | 'file'
+        | 'range'
+        | 'hidden'
+        | 'checkbox'
+        | 'radio'
+        | 'submit'
+        | 'reset'
+        | 'button';
 }
 
 export interface EmailValidationProps {

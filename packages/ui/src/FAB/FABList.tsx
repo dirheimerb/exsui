@@ -1,7 +1,7 @@
 'use client';
 import FABItem from './FABItem';
 import { FABItemProps } from './types';
-import { useFAB } from './use-fab';
+import { useFAB } from '../hooks/use-fab';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FABList({ items }: { items: FABItemProps[] }) {

@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { useDialogContext } from './hooks/use-dialog-context';
+import { useDialogContext } from '../hooks/use-dialog-context';
 /**
  * DialogClose
  * @param {React.ButtonHTMLAttributes<HTMLButtonElement>} props

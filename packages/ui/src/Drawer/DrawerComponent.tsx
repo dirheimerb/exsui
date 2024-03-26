@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDrawer } from './use-drawer'; // Adjust the path as necessary
+import { useDrawer } from '../hooks/use-drawer'; // Adjust the path as necessary
 import { DrawerAnchor, DrawerVariant } from './types';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';

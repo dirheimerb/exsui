@@ -1,6 +1,6 @@
 'use client';
 import React, { useId } from 'react';
-import { useDialogContext } from './hooks/use-dialog-context';
+import { useDialogContext } from '../hooks/use-dialog-context';
 /**
  * DialogTitle
  * @param {React.HTMLProps<HTMLHeadingElement>} { children, ...props }

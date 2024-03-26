@@ -98,3 +98,25 @@ export interface AccordionItemProps {
     className?: string;
     contentClassName?: string;
 }
+
+export interface AccordionProps extends React.ComponentProps<'div'> {
+    open: boolean;
+    icon?: ReactNode;
+    animate?: {
+        unmount: {
+            height: string;
+            transition: { duration: number; times: number[] };
+        };
+        mount: {
+            height: string;
+            transition: { duration: number; times: number[] };
+        };
+    };
+    disabled?: boolean;
+    className?: string;
+    items: AccordionItemProps[];
+}
+
+export interface AccordionProps {
+    items: AccordionItemProps[];
+}

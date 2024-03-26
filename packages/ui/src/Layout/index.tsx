@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from './Sidebar';
 import StaticSidebar from './StaticSidebar';
 
 export interface LayoutProps {

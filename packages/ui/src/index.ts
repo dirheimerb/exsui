@@ -14,7 +14,7 @@ export * from './FAB/FABContext';
 export * from './FAB/FABItem';
 export * from './FAB/FABList';
 export * from './FAB/types';
-export * from './FAB/use-fab';
+export * from './hooks';
 export * from './Views';
 export * from './Drawer';
 import './styles.css';

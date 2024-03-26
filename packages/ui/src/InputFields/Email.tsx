@@ -1,9 +1,9 @@
-import { forwardRef } from 'react';
+import React from 'react';
 import { AiOutlineExclamationCircle } from 'react-icons/ai';
 import { colorVariant, clsxMerge } from '@exsui/utils';
 import { EmailValidationProps } from './types';
 
-const EmailValidation = forwardRef<HTMLInputElement, EmailValidationProps>(function EmailValidation(
+const EmailValidation = React.forwardRef<HTMLInputElement, EmailValidationProps>(function EmailValidation(
     {
         email,
         setEmail,
@@ -64,5 +64,7 @@ const EmailValidation = forwardRef<HTMLInputElement, EmailValidationProps>(funct
         </>
     );
 });
+
 EmailValidation.displayName = 'EmailValidation';
+
 export default EmailValidation;

@@ -1,5 +1,6 @@
+'use client';
+import React from 'react';
 import { ReactNode } from 'react';
-import FormItem from './FormItem';
 
 export interface FormProps {
     /**
@@ -24,12 +25,18 @@ export interface FormProps {
  * @param {FormProps} { children, onSubmit, className }
  * @returns {JSX.Element}
  */
-export default function Form({ children, onSubmit, className }: FormProps): JSX.Element {
+
+const Form = React.memo(function Form({ children, onSubmit, className }: FormProps): JSX.Element {
     return (
-        <form onSubmit={onSubmit} className={className}>
-                {children}
+        <form
+            onSubmit={onSubmit}
+            className={className}>
+            {children}
         </form>
     );
-}
+});
 
-Form.Item = FormItem;
+Form.displayName = 'Form';
+
+export default Form;
+export * from './FormItem';

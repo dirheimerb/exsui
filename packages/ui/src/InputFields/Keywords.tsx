@@ -1,6 +1,7 @@
+'use client';
 import React, { useState } from 'react';
 
-const KeywordInput: React.FC = () => {
+export default function KeywordInput() {
     const [inputValue, setInputValue] = useState('');
     const [keyword, setKeyword] = useState('');
 
@@ -30,6 +31,4 @@ const KeywordInput: React.FC = () => {
             <div className="m-1 text-gray-400 opacity-50">{keyword && <p>Entered Keyword: {keyword}</p>}</div>
         </>
     );
-};
-
-export default KeywordInput;
+}

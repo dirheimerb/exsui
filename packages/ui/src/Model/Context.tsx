@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import { ModelContextProps } from './types';
-import { useModel } from './use-model';
+import { useModel } from '../hooks/use-model';
 
 // PopoverOptions
 

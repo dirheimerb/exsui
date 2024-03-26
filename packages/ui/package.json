@@ -5,12 +5,19 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "main": "index.ts",
-  "module": "index.ts",
-  "types": "index.d.ts",
-  "source": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "source": "src",
   "exports": {
-    ".": "./index.ts"
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./dist": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
   "scripts": {
     "build": "tsup",

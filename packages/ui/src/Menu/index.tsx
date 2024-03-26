@@ -5,11 +5,8 @@ import { MenuProps } from './types';
 
 /**
  * Menu component
- * @date 3/17/2024 - 4:15:32 PM
- *
- * @export
- * @param {MenuProps} param0
- * @param {MenuProps} param0.label
+ * @param {MenuProps} props.label
+ * @param {MenuProps} props.groupClassName
  * @param {MenuProps} param0.children
  * @param {MenuProps} param0....props
  * 
@@ -51,6 +48,5 @@ export default function Menu({ label, children, ...props }: MenuProps): JSX.Elem
 Menu.Item = MenuItem;
 Menu.Group = MenuGroup;
 Menu.displayName = 'Menu';
-
 
 export * from './MotionMenu';

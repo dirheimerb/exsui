@@ -1,5 +1,5 @@
-export { useStyle } from './use-styles';
-export { useColor } from './use-colors';
+export { useStyle } from '../hooks/use-styles';
+export { useColor } from '../hooks/use-colors';
 export { styleAPI } from './style-api';
 export { textColors, backgroundColors, colors } from './colors';
 export { ColorContext, ColorProvider } from './ColorContext';

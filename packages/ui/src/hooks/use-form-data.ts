@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback } from 'react';
 
 export interface UseFormDataReturn<T> {
     /**
@@ -14,7 +14,7 @@ export interface UseFormDataReturn<T> {
 
 /**
  * A custom hook to manage form data.
- * 
+ *
  * @returns An object with the current form data and a method to update it.
  */
 export function useFormData<T extends Record<string, any>>(): UseFormDataReturn<T> {

@@ -1,7 +1,7 @@
 'use client';
 // import React from "react";
 import { LuPlus } from 'react-icons/lu';
-import { useFAB } from './use-fab';
+import { useFAB } from '../hooks/use-fab';
 import FABList from './FABList';
 import { FABItemProps } from './types';
 
@@ -19,3 +19,8 @@ export default function FAB({ items }: { items: FABItemProps[] }) {
         </div>
     );
 }
+
+export * from './types';
+export * from '../hooks/use-fab';
+export * from './FABList';
+export * from './FABItem';

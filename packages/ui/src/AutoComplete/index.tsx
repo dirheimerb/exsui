@@ -11,7 +11,7 @@ import {
     FloatingPortal,
     FloatingFocusManager,
 } from '@floating-ui/react';
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Item from './Item';
 import { data } from './example';
 /**

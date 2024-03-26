@@ -1,5 +1,5 @@
 import React from 'react';
-import type { useDialog } from './hooks/use-dialog';
+import type { useDialog } from '../hooks/use-dialog';
 
 export interface DialogOptions {
     open: boolean;

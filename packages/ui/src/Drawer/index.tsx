@@ -13,7 +13,7 @@ import DrawerComponent from './DrawerComponent';
  * }
  * @returns {JSX.Element}
  */
-export function Drawer({
+export default function Drawer({
     children,
     anchor = 'left',
     width = '240px',
@@ -38,4 +38,4 @@ export function Drawer({
 export * from './types';
 export * from './DrawerComponent';
 export * from './Context';
-export * from './use-drawer';
+export * from '../hooks/use-drawer';

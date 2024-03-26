@@ -1,4 +1,5 @@
 import { clsxMerge, colorVariant } from '@exsui/utils';
+import React from 'react';
 
 export interface Badge {
     /**

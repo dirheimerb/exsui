@@ -2,8 +2,8 @@
 import { useMergeRefs } from '@floating-ui/react';
 import React from 'react';
 import type { DialogTriggerProps } from './types';
-import { useDialogContext } from './hooks/use-dialog-context';
-
+import { useDialogContext } from '../hooks/use-dialog-context';
+import Button from '../Button';
 /**
  * DialogTrigger
  * @param {React.HTMLProps<HTMLElement> & DialogTriggerProps} { children, asChild = false, ...props }
@@ -29,13 +29,13 @@ export const DialogTrigger = React.forwardRef<HTMLElement, React.HTMLProps<HTMLE
         }
 
         return (
-            <button
+            <Button
                 ref={ref}
                 // The user can style the trigger based on the state
                 data-state={context.open ? 'open' : 'closed'}
                 {...context.getReferenceProps(props)}>
                 {children}
-            </button>
+            </Button>
         );
     },
 );

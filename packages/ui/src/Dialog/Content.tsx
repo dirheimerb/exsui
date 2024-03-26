@@ -1,7 +1,7 @@
 'use client';
 import { useMergeRefs, FloatingPortal, FloatingOverlay, FloatingFocusManager } from '@floating-ui/react';
 import React from 'react';
-import { useDialogContext } from './hooks/use-dialog-context';
+import { useDialogContext } from '../hooks/use-dialog-context';
 /**
  * DialogContent
  * @param {React.HTMLProps<HTMLDivElement>} props
