@@ -25,10 +25,10 @@ export const Primary: Story = {
         <Button
             {...props}
             onClick={(): void => {
-                // eslint-disable-next-line no-alert -- alert for demo
-                alert('Hello from Turboexsui!');
-            }}>
-            Hello
+                console.log('Button clicked');
+            }}
+        >
+            {props.children}
         </Button>
     ),
     name: 'Button',

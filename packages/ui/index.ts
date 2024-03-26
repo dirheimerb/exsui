@@ -1,5 +1,7 @@
+
 import './styles.css';
 export * from './src';
+
 export { default as Button } from './src/Button';
 export { default as Dialog } from './src/Dialog';
 export { default as Select } from './src/Select';
@@ -17,6 +19,9 @@ export { default as Keywords } from './src/InputFields/Keywords';
 export { default as Navbar } from './src/Navbar';
 export { default as Sidebar } from './src/Navbar/Sidebar';
 export { default as SidebarSlider } from './src/Navbar/SidebarSlider';
+export {default as MotionMenu} from './src/Menu/MotionMenu';
+export {default as Switch} from './src/Switch';
+export {default as Checkbox} from './src/Checkbox';
 // Hooks
 export { useFAB } from './src/FAB/use-fab';
 export { useRipple } from './src/hooks/use-ripple';
@@ -43,3 +48,5 @@ export * from './src/AutoComplete';
 export * from './src/Layout';
 export * from './src/Snackbar';
 export * from './src/Drawer';
+export * from './src/Checkbox';
+export * from './src/Switch';

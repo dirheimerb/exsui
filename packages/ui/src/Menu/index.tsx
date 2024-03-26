@@ -51,3 +51,6 @@ export default function Menu({ label, children, ...props }: MenuProps): JSX.Elem
 Menu.Item = MenuItem;
 Menu.Group = MenuGroup;
 Menu.displayName = 'Menu';
+
+
+export * from './MotionMenu';
