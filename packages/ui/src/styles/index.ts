@@ -5,7 +5,10 @@ export { textColors, backgroundColors, colors } from './colors';
 export { ColorContext, ColorProvider } from './ColorContext';
 export { ThemeContext, StyleProvider } from './context';
 
+export { colorOptions } from './color-options';
+
 export type {
+    ColorOptions,
     WidthOption,
     RoundnessOption,
     TextSizeOption,

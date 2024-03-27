@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf storybook-static"
   },
   "dependencies": {
     "@exsui/ui": "workspace:*",
@@ -16,19 +17,21 @@
     "@chromatic-com/storybook": "^1.2.25",
     "@exsui/eslint-config": "workspace:*",
     "@exsui/typescript-config": "workspace:*",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@storybook/addon-actions": "^8.0.4",
+    "@storybook/addon-console": "^3.0.0",
+    "@storybook/addon-designs": "^8.0.0",
+    "@storybook/addon-docs": "^8.0.4",
     "@storybook/addon-essentials": "^8.0.4",
     "@storybook/addon-interactions": "^8.0.4",
     "@storybook/addon-links": "^8.0.4",
     "@storybook/addon-onboarding": "^8.0.4",
-    "@storybook/addon-actions": "^7.6.17",
-    "@storybook/addon-designs": "^8.0.0",
-    "@storybook/addon-docs": "^7.6.17",
     "@storybook/addon-storysource": "^8.0.4",
     "@storybook/blocks": "^8.0.4",
     "@storybook/react": "^8.0.4",
     "@storybook/react-vite": "^8.0.4",
     "@storybook/test": "^8.0.4",
-    "@types/react": "^18.2.66",
+    "@types/react": "^18.2.73",
     "@types/react-dom": "^18.2.22",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
@@ -36,7 +39,8 @@
     "react-icons": "^5.0.1",
     "serve": "^14.2.1",
     "storybook": "^8.0.4",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.4"
+    "storybook-dark-mode": "^4.0.1",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6"
   }
 }

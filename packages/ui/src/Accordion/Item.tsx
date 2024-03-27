@@ -31,6 +31,7 @@ export default function AccordionItem({
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
+                        data-accordion={isOpen ? 'open' : 'collapse'}
                         style={{ height: isOpen ? '100px' : '500px' }}>
                         {content}
                     </motion.div>

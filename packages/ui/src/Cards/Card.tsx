@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> & {
     Content: React.FC<CardProps>;
     Footer: React.FC<CardProps>;
 } = ({ children, className = '' }: CardProps): JSX.Element => {
-    return <div className={`overflow-hidden rounded-lg bg-white shadow ${className}`}>{children}</div>;
+    return <article className={`overflow-hidden rounded-lg bg-white shadow ${className}`}>{children}</article>;
 };
 /**
  * Header

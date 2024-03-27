@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Card } from '@exsui/ui';
+import { userEvent, within } from '@storybook/test';
 
 const meta: Meta<typeof Card> = {
     component: Card,
@@ -28,6 +29,11 @@ export default meta;
 type Story = StoryObj<typeof Card>;
 
 export const Primary: Story = {
+    play: async ({ canvasElement }) => {
+        const card = within(canvasElement).getByRole('article');
+        userEvent.click(card);
+    },
+    render: (props) => <Card {...props} />,
     args: {
         children: 'Card content',
     },

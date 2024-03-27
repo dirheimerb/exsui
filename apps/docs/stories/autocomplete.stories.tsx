@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { AutoComplete } from '@exsui/ui';
+import { userEvent, within } from '@storybook/test';
+import {AutoComplete} from '@exsui/ui';
+
+
 
 const meta: Meta<typeof AutoComplete> = {
     component: AutoComplete,
@@ -33,10 +36,17 @@ export default meta;
 type Story = StoryObj<typeof AutoComplete>;
 
 export const Primary: Story = {
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+        const input = canvas.getByRole('combobox');
+        userEvent.type(input, 'a');
+
+        userEvent.type(input, 'p');
+    },
     args: {
         value: '',
         options: [
-            'apple',
+            'Apple',
             'banana',
             'cherry',
             'date',

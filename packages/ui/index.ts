@@ -1,14 +1,18 @@
 import React from 'react';
-import './styles.css';
 export * from './src';
+// import './dist/index.css';
 
 export { default as AutoComplete } from './src/AutoComplete';
 export { default as Accordion } from './src/Accordion';
 export { default as AccordionItem } from './src/Accordion';
+export { default as Alert } from './src/Alert';
 export { default as Badge } from './src/Badge';
 export { default as Banner } from './src/Banner';
+export { default as Breadcrumbs } from './src/Breadcrumbs';
 export { default as Button } from './src/Button';
+export { default as ButtonGroup } from './src/ButtonGroup';
 export { default as Card } from './src/Cards/Card';
+export { default as Callout } from './src/Callout';
 export { default as Checkbox } from './src/Checkbox';
 export { default as Dialog } from './src/Dialog';
 export { default as Drawer } from './src/Drawer';
@@ -22,6 +26,9 @@ export { default as EmailValidation } from './src/InputFields/Email';
 export { default as InputField } from './src/InputFields/InputField';
 export { default as Keywords } from './src/InputFields/Keywords';
 export { default as Layout } from './src/Layout';
+export { default as Link } from './src/Link';
+export { default as LinkComponent } from './src/Link/LinkComponent';
+export { default as LinkProvider } from './src/Link/Context';
 export { default as Menu } from './src/Menu';
 export { default as MotionMenu } from './src/Menu/MotionMenu';
 export { default as Navbar } from './src/Navbar';
@@ -38,10 +45,25 @@ export { default as Tab } from './src/Tab';
 export { default as TabButton } from './src/Tab/TabButton';
 export { TabComponent } from './src/Tab/TabComponent';
 export { default as TabContext } from './src/Tab';
+export { default as TextField } from './src/InputFields/TextField';
 export { default as BoardView } from './src/Views/BoardView';
 export { default as ListView } from './src/Views/ListView';
 export { default as GridView } from './src/Views/GridView';
 export { default as TableView } from './src/Views/TableView';
+export { default as Icon } from './src/Icon';
+export { InstallationIcon } from './src/icons/InstallationIcon';
+export { LightbulbIcon } from './src/icons/LightbulbIcon';
+export { PluginsIcon } from './src/icons/PluginsIcon';
+export { PresetsIcon } from './src/icons/PresetsIcon';
+export { ThemingIcon } from './src/icons/ThemingIcon';
+export { WarningIcon } from './src/icons/WarningIcon';
+// Theme/Styles
+export { 
+    backgroundColors,
+    colorOptions,
+    ColorContext,    
+} from './src/styles';
+
 
 // Hooks
 export { useFAB } from './src/hooks/use-fab';
@@ -58,7 +80,19 @@ export { useModel } from './src/hooks/use-model';
 export { useStyle } from './src/hooks/use-styles';
 export { useSuspenseImage } from './src/hooks/use-suspense-image';
 export { useTabContext } from './src/hooks/use-tab';
+export { useLink } from './src/hooks/use-link';
+
+
 // Types
+export type {
+    ColorKeys,
+    ColorShades,
+    TextColor,
+    BackgroundColor,
+    ColorContextAPI,
+    ColorProviderProps,
+    ColorOptions,
+} from './src/styles';
 export type {
     AccordionBase,
     AccordionHeader,
@@ -69,7 +103,7 @@ export type {
     Container,
     Disabled,
     AccordionProps,
-    Icon,
+    AccordionIcon,
     Active,
     Initial,
 } from './src/Accordion/types';
@@ -96,9 +130,25 @@ export type { SelectProps } from './src/Select';
 export type { SnackbarProps } from './src/Snackbar';
 export type { SwitchProps } from './src/Switch';
 export type { LayoutProps } from './src/Layout';
-export type { MenuContextObj, MenuGroupProps, MenuItemProps, MenuProps, GroupMenuItemProps } from './src/Menu/types';
-export type { FABContextProps, FABContextType, FABItemProps, FABProps, FABProviderProps } from './src/FAB/types';
-export type { InputFieldProps, EditableTextFieldProps, EmailValidationProps } from './src/InputFields/types';
+export type { 
+    MenuContextObj, 
+    MenuGroupProps, 
+    MenuItemProps, 
+    MenuProps, 
+    GroupMenuItemProps 
+} from './src/Menu/types';
+export type { 
+    FABContextProps, 
+    FABContextType, 
+    FABItemProps, 
+    FABProps, 
+    FABProviderProps 
+} from './src/FAB/types';
+export type { 
+    InputFieldProps, 
+    EditableTextFieldProps, 
+    EmailValidationProps 
+} from './src/InputFields/types';
 export type { SidebarProps } from './src/Navbar/SidebarSlider';
 export * from './src/Navbar/Sidebar';
 export * from './src/Navbar';

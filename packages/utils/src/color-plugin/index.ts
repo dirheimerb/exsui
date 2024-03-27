@@ -129,3 +129,5 @@ export function getColorClass(key: ColorKey, colorAspect: ColorAspectKeys = 'bg'
 export function colorVariant({ aspect, colorName, colorStrength, modifier = '' }: ColorVariant): string {
     return `${modifier}${aspect}-${colorName}-${colorStrength}`;
 }
+
+export * from './types';

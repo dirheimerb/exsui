@@ -1,7 +1,7 @@
 import { StoryObj, Meta } from '@storybook/react';
 import { useArgs } from '@storybook/preview-api';
 import { Checkbox, CheckboxProps } from '@exsui/ui'; // Adjust the import path as necessary
-import { AiOutlineClose } from 'react-icons/ai';
+import { userEvent, within } from '@storybook/test';
 
 const meta: Meta<typeof Checkbox> = {
     title: 'Inputs/Checkbox',

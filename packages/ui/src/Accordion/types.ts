@@ -44,7 +44,7 @@ export interface AccordionStylesType {
 export interface AccordionHeader {
     initial?: Initial;
     active?: Active;
-    icon?: Icon;
+    icon?: AccordionIcon;
 }
 
 export type Container = {
@@ -76,7 +76,7 @@ export type Active = {
     color: string;
 };
 
-export type Icon = {
+export type AccordionIcon = {
     marginLeft: string;
 };
 

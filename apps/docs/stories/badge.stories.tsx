@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Badge } from '@exsui/ui';
+import { userEvent, within } from '@storybook/test';
 
 const meta: Meta<typeof Badge> = {
     component: Badge,
@@ -101,6 +102,13 @@ export default meta;
 type Story = StoryObj<typeof Badge>;
 
 export const Primary: Story = {
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+        const span = canvas.getAllByTestId('exsui-badge');
+        console.log(span);
+        await canvas.findByText('Badge');
+    },
+
     args: {
         label: 'Badge',
         textColor: 'black',

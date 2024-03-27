@@ -2,20 +2,27 @@
   "name": "@exsui/utils",
   "version": "0.0.1",
   "description": "", 
-  "main": "index.ts",
-  "module": "index.ts",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "source": "index.ts",
   "exports": {
     ".": "./index.ts"
+    
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "utils"
+  ],
   "author": "Bradley Dirheimer",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "clsx": "^2.1.0",
     "deepmerge": "^4.3.1",

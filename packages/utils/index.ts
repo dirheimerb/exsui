@@ -15,3 +15,8 @@ export type { ColorKey, ColorAspectKeys, ColorNameKeys, ColorVariant } from './s
 export type { RadiusKey } from './src/radius-plugin';
 export type { ShadowKey } from './src/shadow-plugin';
 export type { ComponentSize, ComponentSizeKeys } from './src/size-plugin';
+
+export * from './src/color-plugin';
+export * from './src/radius-plugin';
+export * from './src/shadow-plugin';
+export * from './src/size-plugin';

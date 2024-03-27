@@ -154,3 +154,28 @@ export interface ColorProviderProps {
 export interface StyleProviderProps {
     children: React.ReactNode;
 }
+
+export interface ColorOptions {
+    black: string;
+    white: string;
+    gray: string;
+    red: string;
+    yellow: string;
+    green: string;
+    blue: string;
+    indigo: string;
+    purple: string;
+    pink: string;
+    cyan: string;
+    lime: string;
+    orange: string;
+    teal: string;
+    fuscia: string;
+    slate: string;
+    zinc: string;
+    neutral: string;
+    stone: string;
+    amber: string;
+    emerald: string;
+    sky: string;
+}

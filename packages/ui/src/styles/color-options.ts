@@ -1,0 +1,26 @@
+import { ColorOptions } from "./types";
+
+export const colorOptions: ColorOptions = {
+    black: 'bg-black text-white hover:bg-gray-900',
+    white: 'bg-white text-black hover:bg-gray-100',
+    gray: 'bg-gray-500 text-gray-100 hover:bg-gray-600',
+    red: 'bg-red-500 text-white hover:bg-red-600',
+    yellow: 'bg-yellow-500 text-white hover:bg-yellow-600',
+    green: 'bg-green-500 text-white hover:bg-green-600',
+    blue: 'bg-blue-500 text-white hover:bg-blue-600',
+    indigo: 'bg-indigo-500 text-white hover:bg-indigo-600',
+    purple: 'bg-purple-500 text-white hover:bg-purple-600',
+    pink: 'bg-pink-500 text-white hover:bg-pink-600',
+    cyan: 'bg-cyan-500 text-white hover:bg-cyan-600',
+    lime: 'bg-lime-500 text-white hover:bg-lime-600',
+    orange: 'bg-orange-500 text-white hover:bg-orange-600',
+    teal: 'bg-teal-500 text-white hover:bg-teal-600',
+    fuscia: 'bg-fuscia-500 text-white hover:bg-fuscia-600',
+    slate: 'bg-slate-500 text-white hover:bg-slate-600',
+    zinc: 'bg-zinc-500 text-white hover:bg-zinc-600',
+    neutral: 'bg-neutral-500 text-white hover:bg-neutral-600',
+    stone: 'bg-stone-500 text-white hover:bg-stone-600',
+    amber: 'bg-amber-500 text-white hover:bg-amber-600',
+    emerald: 'bg-emerald-500 text-white hover:bg-emerald-600',
+    sky: 'bg-sky-500 text-white hover:bg-sky-600',
+};

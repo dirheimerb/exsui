@@ -1,5 +1,6 @@
 // import React, { ReactNode } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent, within } from '@storybook/test';
 import { Accordion } from '@exsui/ui';
 
 const meta: Meta<typeof Accordion> = {
@@ -8,11 +9,14 @@ const meta: Meta<typeof Accordion> = {
     argTypes: {
         open: {
             control: 'boolean',
+            description: 'Whether the accordion is open or closed',
         },
         icon: {
             control: 'object',
+            description: 'Icon to display on the accordion',
         },
         animate: {
+            description: 'Whether the accordion should animate when opening and closing',
             control: {
                 unmount: {
                     height: 'string',
@@ -25,12 +29,15 @@ const meta: Meta<typeof Accordion> = {
             },
         },
         disabled: {
+            description: 'Whether the accordion is disabled',
             control: 'boolean',
         },
         className: {
+            description: 'Class name to apply to the accordion',
             control: 'text',
         },
         items: {
+            description: 'Accordion items',
             title: 'string',
             content: 'ReactNode',
             className: 'string',
@@ -55,6 +62,12 @@ export default meta;
 type Story = StoryObj<typeof Accordion>;
 
 export const Primary: Story = {
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+        const accordion = canvas.getByRole('button', { name: /accordion item 1/i });
+        userEvent.click(accordion);
+        await canvas.findByText('Accordion Content 1');
+    },
     args: {
         open: false,
         items: [

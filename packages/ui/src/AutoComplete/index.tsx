@@ -72,6 +72,14 @@ export default function AutoComplete(): JSX.Element {
     return (
         <>
             <input
+                data-value={inputValue}
+                role="combobox"
+                aria-expanded={open}
+                aria-owns={open ? context.nodeId : undefined}
+                aria-controls={open ? context.nodeId : undefined}
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                aria-activedescendant={activeIndex != null ? listRef.current[activeIndex]?.id : undefined}
                 {...getReferenceProps({
                     ref: refs.setReference,
                     onChange,

@@ -1,8 +1,10 @@
 import type { Preview } from '@storybook/react';
 import './index.css';
 
-const preview: Preview = {
+export const parameters: Preview = {
+
     parameters: {
+        
         controls: {
             matchers: {
                 color: /(background|color)$/i,
@@ -12,4 +14,4 @@ const preview: Preview = {
     },
 };
 
-export default preview;
+export default parameters;
