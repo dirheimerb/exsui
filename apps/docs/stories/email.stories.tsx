@@ -29,7 +29,7 @@ const meta: Meta<typeof EmailValidation> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Inputs/EmailValidation',
+    title: 'Input/EmailValidation',
 };
 
 export default meta;

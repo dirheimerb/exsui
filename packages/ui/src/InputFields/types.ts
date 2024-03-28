@@ -37,7 +37,6 @@ export interface EmailValidationProps {
     errorMessage: string;
     className?: string;
     disabled?: boolean;
-    backgroundColor?: string;
     textColor?: string;
     ringColor?: string;
     focusColor?: string;

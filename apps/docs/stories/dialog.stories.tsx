@@ -32,8 +32,8 @@ const meta: Meta<typeof Dialog> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Components/Dialog',
-    tags: ['components', 'dialog', 'autodocs'],
+    title: 'Overlay/Dialog',
+    tags: ['components', 'Overlay', 'dialog', 'autodocs'],
 };
 
 export default meta;
@@ -41,6 +41,12 @@ export default meta;
 type Story = StoryObj<typeof Dialog>;
 
 export const Primary: Story = {
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+        const button = canvas.getByRole('button');
+        userEvent.click(button);
+        await canvas.findByText('Open Dialog');
+    },
     render: (props) => {
         const [open, setOpen] = React.useState(false);
 

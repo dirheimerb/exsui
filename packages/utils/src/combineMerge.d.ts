@@ -11,5 +11,9 @@ export interface MergeOptions {
  * @param mergeOptions - Options for controlling the merge behavior.
  * @returns The resulting array after merging.
  */
-export default function combineMerge(targetArray: ArrayItem[], sourceArray: ArrayItem[], mergeOptions: MergeOptions): ArrayItem[];
+export default function combineMerge(
+    targetArray: ArrayItem[],
+    sourceArray: ArrayItem[],
+    mergeOptions: MergeOptions,
+): ArrayItem[];
 //# sourceMappingURL=combineMerge.d.ts.map

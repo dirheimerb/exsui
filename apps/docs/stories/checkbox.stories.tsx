@@ -1,10 +1,10 @@
 import { StoryObj, Meta } from '@storybook/react';
 import { useArgs } from '@storybook/preview-api';
-import { Checkbox, CheckboxProps } from '@exsui/ui'; // Adjust the import path as necessary
+import { Checkbox } from '@exsui/ui'; // Adjust the import path as necessary
 import { userEvent, within } from '@storybook/test';
 
 const meta: Meta<typeof Checkbox> = {
-    title: 'Inputs/Checkbox',
+    title: 'Input/Checkbox',
     component: Checkbox,
     args: {
         id: 'storybook-checkbox',
@@ -25,28 +25,30 @@ const meta: Meta<typeof Checkbox> = {
             description: 'Function to call when the checkbox state changes',
         },
     },
+    decorators: [
+        (Story) => (
+            <div className="p-4">
+                <Story />
+            </div>
+        ),
+    ],
 };
 export default meta;
 
 type Story = StoryObj<typeof Checkbox>;
 
-export const Example: Story = {
+export const Primary: Story = {
+    play: async ({ canvasElement }) => {
+        const canvas = within(canvasElement);
+        const checkbox = canvas.getByRole('checkbox');
+        userEvent.click(checkbox);
+        await canvas.findByText('Check Me!');
+    },
     args: {
-        // Default args for the story
+        id: 'storybook-checkbox',
+        label: 'Check Me!',
+        checked: false,
     },
-    render: function Render(args) {
-        const [currentArgs, updateArgs] = useArgs();
-        const handleChange = (checked: boolean) => {
-            updateArgs({ ...currentArgs, checked });
-            args.onChange(checked); // Trigger the action in Storybook's actions panel
-        };
 
-        return (
-            <Checkbox
-                {...args}
-                checked={currentArgs.checked}
-                onChange={handleChange}
-            />
-        );
-    },
+    render: (props) => <Checkbox {...props} />,
 };

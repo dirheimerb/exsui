@@ -33,7 +33,6 @@ const meta: Meta<typeof ButtonGroup> = {
             action: 'rightClick',
             description: 'Function to be called on right button click',
         },
-        
     },
     parameters: {
         docs: {
@@ -43,7 +42,7 @@ const meta: Meta<typeof ButtonGroup> = {
         },
     },
     tags: ['autodocs', 'button', 'group'],
-    title: 'Components/ButtonGroup',
+    title: 'Input/ButtonGroup',
 };
 
 export default meta;
@@ -51,9 +50,7 @@ export default meta;
 type Story = StoryObj<typeof ButtonGroup>;
 
 export const Default: Story = {
-    render: (props) => (
-        <ButtonGroup {...props} />
-    ),
+    render: (props) => <ButtonGroup {...props} />,
     args: {
         leftChild: 'Previous',
         centerChild: 'Center',
@@ -67,6 +64,5 @@ export const Default: Story = {
         userEvent.click(prevButtonGroup);
         userEvent.click(centerButtonGroup);
         userEvent.click(nextButtonGroup);
-    }
-
+    },
 };

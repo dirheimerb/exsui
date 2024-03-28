@@ -34,7 +34,6 @@ export interface ButtonGroupProps extends HTMLAttributes<HTMLButtonElement> {
     centerClick?: () => void;
     rightClick?: () => void;
     rounded?: boolean;
-
 }
 export default function ButtonGroup({
     leftChild,
@@ -55,8 +54,12 @@ export default function ButtonGroup({
                 type="button"
                 role="group"
                 aria-label="Previous"
-                data-id='exsui-button-group-left'                
-                className={clsxMerge('relative inline-flex items-center rounded-l-md px-3 py-2 text-sm font-semibold', colorOptions, rounded ? 'rounded' : '')}>
+                data-id="exsui-button-group-left"
+                className={clsxMerge(
+                    'relative inline-flex items-center rounded-l-md px-3 py-2 text-sm font-semibold',
+                    colorOptions,
+                    rounded ? 'rounded' : '',
+                )}>
                 {iconOnly ? <HiChevronLeft className="h-5 w-5" /> : <>{leftChild}</>}
             </Button>
             {!iconOnly && (
@@ -64,9 +67,13 @@ export default function ButtonGroup({
                     type="button"
                     role="group"
                     aria-label="Center"
-                    data-id='exsui-button-group-center'
+                    data-id="exsui-button-group-center"
                     onClick={centerChild ? centerClick : undefined}
-                    className={clsxMerge('relative -ml-px inline-flex items-center px-3 py-2 text-sm font-semibold', colorOptions, rounded ? 'rounded' : '')}>
+                    className={clsxMerge(
+                        'relative -ml-px inline-flex items-center px-3 py-2 text-sm font-semibold',
+                        colorOptions,
+                        rounded ? 'rounded' : '',
+                    )}>
                     {centerChild}
                 </Button>
             )}
@@ -74,9 +81,13 @@ export default function ButtonGroup({
                 type="button"
                 role="group"
                 aria-label="Next"
-                data-id='exsui-button-group-right'
+                data-id="exsui-button-group-right"
                 onClick={rightChild ? rightClick : undefined}
-                className={clsxMerge('-ml-px inline-flex items-center rounded-r-md px-3 py-2 text-sm font-semibold', colorOptions, rounded ? 'rounded' : '')}>
+                className={clsxMerge(
+                    '-ml-px inline-flex items-center rounded-r-md px-3 py-2 text-sm font-semibold',
+                    colorOptions,
+                    rounded ? 'rounded' : '',
+                )}>
                 {iconOnly ? <HiChevronRight className="h-5 w-5" /> : <>{rightChild}</>}
             </Button>
         </span>

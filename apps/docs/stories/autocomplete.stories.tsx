@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/test';
-import {AutoComplete} from '@exsui/ui';
-
-
+import { AutoComplete } from '@exsui/ui';
 
 const meta: Meta<typeof AutoComplete> = {
     component: AutoComplete,
@@ -17,7 +15,7 @@ const meta: Meta<typeof AutoComplete> = {
             action: 'onChange',
         },
     },
-    title: 'Components/AutoComplete',
+    title: 'Input/AutoComplete',
     parameters: {
         controls: { expanded: true },
     },

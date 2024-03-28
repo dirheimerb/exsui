@@ -2,9 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/test';
 import { TextField } from '@exsui/ui';
 
-
 const meta: Meta<typeof TextField> = {
-    component: TextField,    
+    component: TextField,
     tags: ['autodocs'],
     argTypes: {
         children: {
@@ -69,9 +68,8 @@ const meta: Meta<typeof TextField> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Components/TextField',
+    title: 'Data Display/TextField',
 };
-
 
 export default meta;
 
@@ -79,7 +77,7 @@ type Story = StoryObj<typeof TextField>;
 
 export const Primary: Story = {
     play: async ({ canvasElement }) => {
-        const canvas = within(canvasElement);        
+        const canvas = within(canvasElement);
         await canvas.findAllByRole('textbox');
     },
     args: {
@@ -117,7 +115,6 @@ export const Primary: Story = {
             source: {
                 type: 'code',
             },
-
         },
     },
 };

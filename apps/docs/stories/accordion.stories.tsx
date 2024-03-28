@@ -54,7 +54,7 @@ const meta: Meta<typeof Accordion> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Components/Accordion',
+    title: 'Data Display/Accordion',
 };
 
 export default meta;

@@ -3,12 +3,15 @@ import { AccordionItemProps } from './types';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAccordion } from '../hooks/use-accordion';
 
-export default function AccordionItem({
-    title,
-    content,
-    className = 'flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 my-1',
-    contentClassName = 'flex px-4 py-2 text-gray-800 bg-gray-100',
-}: AccordionItemProps) {
+const AccordionItem = React.forwardRef<HTMLDivElement, AccordionItemProps>(function AccordionItem(
+    {
+        title,
+        content,
+        className = 'flex justify-between items-center w-full px-4 py-2 text-left text-gray-800 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 my-1',
+        contentClassName = 'flex px-4 py-2 text-gray-800 bg-gray-100',
+    }: AccordionItemProps,
+    ref,
+) {
     const [isOpen, setIsOpen] = React.useState(false);
     const { setOpenIndex } = useAccordion();
     return (
@@ -26,6 +29,7 @@ export default function AccordionItem({
                 {isOpen && (
                     <motion.div
                         layout
+                        ref={ref}
                         className={contentClassName}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -39,4 +43,8 @@ export default function AccordionItem({
             </AnimatePresence>
         </div>
     );
-}
+});
+
+AccordionItem.displayName = 'AccordionItem';
+
+export default AccordionItem;

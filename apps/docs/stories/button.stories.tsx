@@ -102,7 +102,7 @@ const meta: Meta<typeof Button> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Components/Button',
+    title: 'Input/Button',
     decorators: [
         (Story) => (
             <div style={{ margin: '3em' }}>
@@ -110,7 +110,7 @@ const meta: Meta<typeof Button> = {
             </div>
         ),
     ],
-    tags: ['components', 'button', 'autodocs'],
+    tags: ['components', 'input', 'button', 'autodocs'],
     args: {
         color: 'blue',
         children: 'Hello',
@@ -139,12 +139,6 @@ const meta: Meta<typeof Button> = {
         animate: {
             scale: 1,
             opacity: 1,
-        },
-        style: {
-            color: 'blue',
-            border: '1px solid gray',
-            padding: 10,
-            borderRadius: 10,
         },
     },
 };
@@ -184,6 +178,27 @@ export const Primary: Story = {
         rounded: false,
         pill: false,
         Motion: false,
+    },
+};
+
+export const Small: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            size="sm"
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'filled',
+        size: 'sm',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
         exit: {
             scale: 0.5,
             x: 0,
@@ -201,12 +216,332 @@ export const Primary: Story = {
             scale: 1,
             opacity: 1,
         },
+    },
+};
 
+export const Medium: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            size="md"
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'filled',
+        size: 'md',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
         style: {
             color: 'blue',
             border: '1px solid gray',
             padding: 10,
             borderRadius: 10,
+        },
+    },
+};
+
+export const Large: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            size="lg"
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'filled',
+        size: 'lg',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
+        style: {
+            color: 'blue',
+            border: '1px solid gray',
+            padding: 10,
+            borderRadius: 10,
+        },
+    },
+};
+
+export const Filled: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            variant="filled"
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'filled',
+        size: 'md',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
+        style: {
+            color: 'blue',
+            border: '1px solid gray',
+            padding: 10,
+            borderRadius: 10,
+        },
+    },
+};
+
+export const Outlined: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            variant="outlined"
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'outlined',
+        size: 'md',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
+        style: {
+            color: 'blue',
+            border: '1px solid gray',
+            padding: 10,
+            borderRadius: 10,
+        },
+    },
+};
+
+export const Text: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            variant="text"
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'text',
+        size: 'md',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
+        style: {
+            color: 'blue',
+            border: '1px solid gray',
+            padding: 10,
+            borderRadius: 10,
+        },
+    },
+};
+
+export const Loading: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            loading
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'filled',
+        size: 'md',
+        fullWidth: false,
+        loading: true,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: false,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
+        style: {
+            color: 'blue',
+            border: '1px solid gray',
+            padding: 10,
+            borderRadius: 10,
+        },
+    },
+};
+
+export const MotionButton: Story = {
+    render: (props) => (
+        <Button
+            {...props}
+            Motion
+            initial={{
+                x: -100,
+                y: 0,
+                opacity: 0,
+                scale: 0.5,
+            }}
+            animate={{
+                x: 0,
+                y: 0,
+                opacity: 1,
+                scale: 1,
+            }}
+            exit={{
+                x: 100,
+                y: 0,
+                opacity: 0,
+                scale: 0.5,
+            }}
+            transition={{
+                duration: 0.5,
+            }}
+        />
+    ),
+    args: {
+        children: 'Hello',
+        type: 'button',
+        variant: 'filled',
+        size: 'md',
+        fullWidth: false,
+        loading: false,
+        disabled: false,
+        rounded: false,
+        pill: false,
+        Motion: true,
+        exit: {
+            scale: 0.5,
+            x: 0,
+            y: 0,
+            opacity: 0,
+        },
+        transition: {
+            duration: 0.5,
+        },
+        initial: {
+            scale: 0.5,
+            opacity: 0,
+        },
+        animate: {
+            scale: 1,
+            opacity: 1,
+        },
+        style: {
+            color: 'blue',
+            border: '1px solid gray',
         },
     },
 };

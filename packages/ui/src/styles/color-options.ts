@@ -1,4 +1,4 @@
-import { ColorOptions } from "./types";
+import { ColorOptions } from './types';
 
 export const colorOptions: ColorOptions = {
     black: 'bg-black text-white hover:bg-gray-900',

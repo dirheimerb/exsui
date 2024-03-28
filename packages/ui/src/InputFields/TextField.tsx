@@ -1,8 +1,8 @@
 'use client';
-import { HTMLAttributes } from "react";
-import { ColorKeys } from "../styles";
-import React from "react";
-import { clsxMerge } from "@exsui/utils";
+import { HTMLAttributes } from 'react';
+import { ColorKeys } from '../styles';
+import React from 'react';
+import { clsxMerge } from '@exsui/utils';
 
 export interface TextFieldProps extends HTMLAttributes<HTMLParagraphElement> {
     variant?: 'filled' | 'outlined' | 'text' | 'underlined';
@@ -33,84 +33,78 @@ export interface TextFieldProps extends HTMLAttributes<HTMLParagraphElement> {
  * @param {string} focusColor - 'gray' | 'red' | 'yellow' | 'green' | 'blue' | 'indigo' | 'purple' | 'pink'
  * @returns {React.ReactElement}
  */
-const TextField = React.forwardRef<HTMLParagraphElement, TextFieldProps>(
-    function TextField(
-        {
-            variant = 'filled',
-            size = 'md',
-            fullWidth = false,
-            rounded,
-            pill,
-            className,
-            disabled,
-            backgroundColor = 'gray',
-            textColor = 'white',
-            ringColor = 'gray',
-            focusColor = 'focus:ring-gray-500',
-            children,
-            ...props
-        },
-        ref,
-    ) {
-        return (
-            <p
-                id={props.id}
-                data-label='exsui-text-field'
-                role='textbox'
-                aria-label={props['aria-label']}                
-                aria-describedby={props['aria-describedby']}
-                ref={ref}
-                className={clsxMerge(
-                    'flex items-center justify-center font-medium focus:outline-none',
-                    disabled && 'opacity-50 cursor-not-allowed',
-                    className,
-                    variant === 'filled' &&
-                        `${clsxMerge(
-                            `bg-${backgroundColor}-500 text-${textColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
-                            {
-                                'w-full': fullWidth,
-                                'rounded-full': pill,
-                                'rounded-md': rounded,
-                            },
-                        )}`,
-                    variant === 'outlined' &&
-                        `${clsxMerge(
-                            `border- border${backgroundColor}-500 text-${backgroundColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
-                            {
-                                'w-full': fullWidth,
-                                'rounded-full': pill,
-                                'rounded-md': rounded,
-                            },
-                        )}`,
-                    variant === 'text' &&
-                        `${clsxMerge(
-                            `text-${backgroundColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
-                            {
-                                'w-full': fullWidth,
-                                'rounded-full': pill,
-                                'rounded-md': rounded,
-                            },
-                        )}`,
-                    variant === 'underlined' &&
-                        `${clsxMerge(
-                            `border-b border-${backgroundColor}-500 text-${backgroundColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
-                            {
-                                'w-full': fullWidth,
-                                'rounded-full': pill,
-                                'rounded-md': rounded,
-                            },
-                        )}`,
-                    size === 'sm' && `px-4 py-2 text-sm`,
-                    size === 'md' && `px-6 py-3 text-base`,
-                    size === 'lg' && `px-8 py-4 text-lg`,                    
-            )}
-                {...props}
-            >
-                {children}
-            </p>
-        );
+const TextField = React.forwardRef<HTMLParagraphElement, TextFieldProps>(function TextField(
+    {
+        variant = 'filled',
+        size = 'md',
+        fullWidth = false,
+        rounded,
+        pill,
+        className,
+        disabled,
+        backgroundColor = 'gray',
+        textColor = 'white',
+        ringColor = 'gray',
+        focusColor = 'focus:ring-gray-500',
+        children,
+        ...props
     },
-);
+    ref,
+) {
+    return (
+        <p
+            id={props.id}
+            data-label="exsui-text-field"
+            role="textbox"
+            aria-label={props['aria-label']}
+            aria-describedby={props['aria-describedby']}
+            ref={ref}
+            className={clsxMerge(
+                'flex items-center justify-center font-medium focus:outline-none',
+                disabled && 'cursor-not-allowed opacity-50',
+                className,
+                variant === 'filled' &&
+                    `${clsxMerge(
+                        `bg-${backgroundColor}-500 text-${textColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
+                        {
+                            'w-full': fullWidth,
+                            'rounded-full': pill,
+                            'rounded-md': rounded,
+                        },
+                    )}`,
+                variant === 'outlined' &&
+                    `${clsxMerge(
+                        `border- border${backgroundColor}-500 text-${backgroundColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
+                        {
+                            'w-full': fullWidth,
+                            'rounded-full': pill,
+                            'rounded-md': rounded,
+                        },
+                    )}`,
+                variant === 'text' &&
+                    `${clsxMerge(`text-${backgroundColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`, {
+                        'w-full': fullWidth,
+                        'rounded-full': pill,
+                        'rounded-md': rounded,
+                    })}`,
+                variant === 'underlined' &&
+                    `${clsxMerge(
+                        `border-b border-${backgroundColor}-500 text-${backgroundColor}-500 focus:ring-${focusColor}-500 ring-${ringColor}-500`,
+                        {
+                            'w-full': fullWidth,
+                            'rounded-full': pill,
+                            'rounded-md': rounded,
+                        },
+                    )}`,
+                size === 'sm' && `px-4 py-2 text-sm`,
+                size === 'md' && `px-6 py-3 text-base`,
+                size === 'lg' && `px-8 py-4 text-lg`,
+            )}
+            {...props}>
+            {children}
+        </p>
+    );
+});
 
 TextField.displayName = 'TextField';
 

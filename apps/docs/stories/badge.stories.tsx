@@ -83,7 +83,7 @@ const meta: Meta<typeof Badge> = {
         //     control: 'boolean'
         // }
     },
-    title: 'Components/Badge',
+    title: 'Feedback/Badge',
     parameters: {
         controls: { expanded: true },
     },

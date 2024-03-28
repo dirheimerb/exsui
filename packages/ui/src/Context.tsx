@@ -7,11 +7,11 @@ export interface AppContext {
 }
 
 export default function Context() {
-  return (
-    <StyleProvider>
-      <ColorProvider>
-            <App />
-      </ColorProvider>
-    </StyleProvider>
-  );
+    return (
+        <StyleProvider>
+            <ColorProvider>
+                <App />
+            </ColorProvider>
+        </StyleProvider>
+    );
 }

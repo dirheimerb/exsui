@@ -31,8 +31,8 @@ const meta: Meta<typeof Link> = {
             </div>
         ),
     ],
-    tags: ['components', 'link', 'autodocs'],
-    title: 'Components/Link',
+    tags: ['Navigation', 'link', 'autodocs'],
+    title: 'Navigation/Link',
     parameters: {
         controls: { expanded: true },
     },
@@ -45,7 +45,7 @@ type Story = StoryObj<typeof Link>;
 export const Primary: Story = {
     play: async ({ canvasElement }) => {
         const canvas = within(canvasElement);
-        const span = canvas.getAllByTestId('exsui-link');
+        const span = canvas.getByText('Link');
         console.log(span);
         await canvas.findByText('Link');
     },

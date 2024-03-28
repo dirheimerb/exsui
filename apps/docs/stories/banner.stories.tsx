@@ -33,8 +33,8 @@ const meta: Meta<typeof Banner> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Components/Banner',
-    tags: ['components', 'banner', 'autodocs'],
+    title: 'Feedback/Banner',
+    tags: ['components', 'Feedback', 'banner', 'autodocs'],
 };
 
 export default meta;

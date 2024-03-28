@@ -23,7 +23,9 @@ const EditableTextField: React.FC<EditableTextFieldProps> = ({ initialValue, onS
     };
 
     return (
-        <div data-editable-text-field={isEditing} role='textbox'>
+        <div
+            data-editable-text-field={isEditing}
+            role="textbox">
             {isEditing ? (
                 <div>
                     <input

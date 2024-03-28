@@ -20,8 +20,8 @@ const meta: Meta<typeof Card> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Components/Card',
-    tags: ['components', 'card', 'autodocs'],
+    title: 'Data Display/Card',
+    tags: ['components', 'Data Display', 'card', 'autodocs'],
 };
 
 export default meta;

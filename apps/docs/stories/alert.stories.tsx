@@ -3,7 +3,6 @@ import { useArgs } from '@storybook/preview-api';
 import { Alert } from '@exsui/ui';
 import { userEvent, within } from '@storybook/test';
 
-
 const meta: Meta<typeof Alert> = {
     component: Alert,
     argTypes: {
@@ -28,7 +27,7 @@ const meta: Meta<typeof Alert> = {
             description: 'Link of the alert',
         },
     },
-    title: 'Components/Alert',
+    title: 'Data Display/Alert',
     tags: ['components', 'alert', 'autodocs'],
     decorators: [
         (Story) => (

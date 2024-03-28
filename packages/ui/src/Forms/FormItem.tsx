@@ -2,6 +2,7 @@ import React, { forwardRef } from 'react';
 import { useFormItem } from '../hooks/use-form-item';
 import InputField from '../InputFields/InputField';
 import { clsxMerge } from '@exsui/utils';
+import { z } from 'zod';
 
 export interface FormItemProps {
     label: string;
@@ -39,8 +40,9 @@ const FormItem = forwardRef<HTMLInputElement, FormItemProps>(function FormItem(
     ref,
 ): JSX.Element {
     const { value: internalValue, handleChange: internalOnChange } = useFormItem(initialValue);
+
     const handleValueChange = onChange
-        ? (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.target.value)
+        ? (e: React.ChangeEvent<HTMLInputElement>) => onChange(z.string().parse(e.target.value))
         : internalOnChange;
     const inputValue = value ?? internalValue;
 

@@ -1,10 +1,7 @@
 import type { Config } from 'tailwindcss';
-// import sharedConfig from '@exsui/tailwind-config';
-// const config: Pick<Config, "prefix" | "presets" | "content"> = {
-//     content: ["./src/**/*.tsx"],
-//     prefix: "ui-",
-//     presets: [sharedConfig],
-//   };
+import typography from '@tailwindcss/typography';
+import forms from '@tailwindcss/forms';
+
 const config: Config = {
     content: ['./index.ts', './src/**/*.{ts,tsx, js, jsx}'],
     darkMode: 'class',
@@ -17,15 +14,9 @@ const config: Config = {
                     200: '#888883',
                 },
             },
-            fontFamily: {
-                body: ['Nunito'],
-            },
         },
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+    plugins: [typography, forms],
 };
 
 export default config;

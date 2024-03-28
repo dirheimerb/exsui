@@ -9,12 +9,13 @@ import { LayoutGroup } from 'framer-motion';
  * @param {AccordionProps} props
  * @returns {JSX.Element}
  */
-const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(({ items }): JSX.Element => {
+const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(({ items }, ref): JSX.Element => {
     return (
         <AccordionContextProvider>
             <LayoutGroup>
                 {items.map((item, index) => (
                     <AccordionItem
+                        ref={ref}
                         key={index}
                         title={item.title}
                         content={item.content}

@@ -1,15 +1,11 @@
-import Alert from "./Alert";
-
+import Alert from './Alert';
 
 export default function App() {
-  return (
-    <div>
-      <h1 className="text-4xl text-center"
-      >App</h1>
+    return (
+        <div>
+            <h1 className="text-center text-4xl">App</h1>
 
-      <Alert>
-      "Hello World"
-      </Alert>
-    </div>
-  );
+            <Alert>"Hello World"</Alert>
+        </div>
+    );
 }

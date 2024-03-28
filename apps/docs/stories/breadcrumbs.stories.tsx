@@ -31,7 +31,7 @@ const meta: Meta<typeof Breadcrumbs> = {
             },
         },
     },
-    title: 'Components/Breadcrumbs',
+    title: 'Navigation/Breadcrumbs',
     tags: ['components', 'breadcrumbs', 'autodocs'],
     decorators: [
         (Story) => (
@@ -50,7 +50,7 @@ export default meta;
 type Story = StoryObj<typeof Breadcrumbs>;
 
 export const Primary: Story = {
-   render: (props) => <Breadcrumbs {...props} />,
+    render: (props) => <Breadcrumbs {...props} />,
     args: {
         fullWidth: false,
         separator: 'slash',

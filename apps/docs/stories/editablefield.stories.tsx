@@ -25,7 +25,7 @@ const meta: Meta<typeof EditableTextField> = {
     parameters: {
         controls: { expanded: true },
     },
-    title: 'Inputs/EditableTextField',
+    title: 'Input/EditableTextField',
 };
 
 export default meta;
